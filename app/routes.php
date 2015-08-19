@@ -15,3 +15,22 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('/sayhello/{name?}', function($name = null)
+{
+    if ($name == "Chris") {
+        return Redirect::to('/');
+    } else {
+        return "Hello, $name!";
+    }
+});
+
+Route::get('/resume', function()
+{
+    return "This is my resume.";
+});
+
+Route::get('/portfolio', function()
+{
+    return "This is my portfolio.";
+});
