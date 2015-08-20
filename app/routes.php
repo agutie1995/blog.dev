@@ -25,16 +25,23 @@ Route::get('/', 'HomeController@showWelcome');
 
 Route::get('/resume', 'HomeController@showResume');
 
-Route::resource('/posts', 'PostsController@index');
-Route::resource('/posts/{id}', 'PostsController@show');
-Route::resource('/posts/{id}', 'PostsController@s');
-
-
-Route::get('/portfolio', function()
+Route::get('/create', function()
 {
-    return "This is my portfolio.";
-    return View::make('portfolio');
+	return View::make('form');
 });
+
+Route::post('/create', function()
+{
+	$input = Input::all();
+});
+
+Route::resource('/posts', 'PostsController');
+
+// Route::get('/portfolio', function()
+// {
+//     return "This is my portfolio.";
+//     return View::make('portfolio');
+// });
 
 
 // // roll dice
