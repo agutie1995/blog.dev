@@ -11,26 +11,49 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+// Route::get('/', function()
+// {
+// 	return View::make('/');
+// });
 
-Route::get('/sayhello/{name?}', function($name = null)
-{
-    if ($name == "Chris") {
-        return Redirect::to('/');
-    } else {
-        return "Hello, $name!";
-    }
-});
+// Route::get('/sayhello/{name}', function($name)
+// {
+//     return View::make('sayhello')->with('name', $name);
+// });
 
-Route::get('/resume', function()
-{
-    return "This is my resume.";
-});
+Route::get('/', 'HomeController@showWelcome');
+
+Route::get('/resume', 'HomeController@showResume');
+
+Route::resource('/posts', 'PostsController@index');
+Route::resource('/posts/{id}', 'PostsController@show');
+Route::resource('/posts/{id}', 'PostsController@s');
+
 
 Route::get('/portfolio', function()
 {
     return "This is my portfolio.";
+    return View::make('portfolio');
 });
+
+
+// // roll dice
+// Route::get('/rolldice/{guess}', function($guess)
+// {
+// 	$randNumber = mt_rand(1, 6);
+
+// 	if ($guess == $randNumber) {
+// 		$message = 'You guess was correct!';
+// 	} else {
+// 		$message = 'Your guess was incorrect...';
+// 	}
+	
+// 	$data = array(
+// 		'guess' => $guess,
+// 		'randnumber' => $randNumber,
+// 		'message' => $message,
+// 		);
+
+//     return View::make('rolldice')->with($data);
+
+// });

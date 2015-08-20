@@ -1,0 +1,9 @@
+body{
+    background: url('/img/slate3.jpg') no-repeat top center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+}
