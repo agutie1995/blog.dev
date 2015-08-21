@@ -9,7 +9,9 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		return 'We are on index';
+		return "This is the index page.";
+		// $posts = Post::all();
+		// return View::make('post.index')->with('posts', $posts);
 	}
 
 
@@ -21,7 +23,7 @@ class PostsController extends \BaseController {
 	public function create()
 	{
 		// show form be returning view
-		return 'Form to create a post';
+		return View::make('posts.create');
 	}
 
 
@@ -32,8 +34,27 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
-		return 'Store the new post';
+
+		if (!Input::has('title') && !Input::has('body')){
+			return Redirect::back()->withInput();
+		}
+
+	    // create the validator
+	    $validator = Validator::make(Input::all(), Post::$rules);
+
+	    // attempt validation
+	    if ($validator->fails()) {
+	        // validation failed, redirect to the post create page with validation errors and old inputs
+	        return Redirect::back()->withInput()->withErrors($validator);
+	    } else {
+	        // validation succeeded, create and save the post
+	        $post = new Post();
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+			$post->save();
+
+			return Redirect::action('PostsController@index');
+	    }
 	}
 
 
@@ -45,8 +66,9 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
-		return "This is post {$id}";
+		$post = Post::find($id);
+		// return View::make('post');
+		return var_dump($post);
 	}
 
 
@@ -58,8 +80,8 @@ class PostsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
-		return "Form to edit post {$id}";
+		$post = Post::find($id);
+		return View::make('post.edit')->with('post', $post);
 	}
 
 
@@ -71,8 +93,12 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
-		return "Update post {$id}";
+		$post = Post::find($id);
+		$post->title = Input::get('title');
+		$post->bosy = Input::get('body');
+		$post->save();
+
+		return Redirect::action('PostsController@show', array($id));
 	}
 
 
@@ -84,9 +110,9 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
-		return "Delte post {$id}";
+		$post = Post::find($id);
+		$post->delete();
+
+		return  Redirect::action('PostsController@index');
 	}
-
-
 }
