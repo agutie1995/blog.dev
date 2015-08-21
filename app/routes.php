@@ -13,41 +13,14 @@
 
 Route::get('/', 'HomeController@showWelcome');
 
-Route::get('/resume', 'HomeController@showResume');
-
 Route::resource('/posts', 'PostsController');
 
+Route::get('/resume', 'HomeController@showResume');
 
-Route::get('orm-test', function ()
-{
-    $post1 = new Post();
-	$post1->title = 'Eloquent is awesome!';
-	$post1->body  = 'It is super easy to create a new post.';
-	$post1->save();
+Route::get('/portfolio', 'HomeController@showPortfolio');
 
-	$post2 = new Post();
-	$post2->title = 'Post number two';
-	$post2->body  = 'The body for post number two.';
-	$post2->save();
-});
+Route::get('/simonsays', 'HomeController@showSimonSays');
 
-// // roll dice
-// Route::get('/rolldice/{guess}', function($guess)
-// {
-// 	$randNumber = mt_rand(1, 6);
+Route::get('/whackamole', 'HomeController@showWhackAMole');
 
-// 	if ($guess == $randNumber) {
-// 		$message = 'You guess was correct!';
-// 	} else {
-// 		$message = 'Your guess was incorrect...';
-// 	}
-	
-// 	$data = array(
-// 		'guess' => $guess,
-// 		'randnumber' => $randNumber,
-// 		'message' => $message,
-// 		);
-
-//     return View::make('rolldice')->with($data);
-
-// });
+Route::get('/calculator', 'HomeController@showCalculator');

@@ -18,12 +18,32 @@ class HomeController extends BaseController {
 	public function showWelcome()
 	{
 		return View::make('hello');
-        return Redirect::action('HomeController@showResume', array('Bob'));
+        return Redirect::action('HomeController@showResume');
 	}
 
 	public function showResume()
 	{
 		return View::make('resume');
+	}
+
+	public function showPortfolio()
+	{
+		return View::make('portfolio');
+	}
+
+	public function showSimonSays()
+	{
+		return View::make('simonesays');
+	}
+
+	public function showWhackAMole()
+	{
+		return View::make('whackamole');
+	}	
+
+	public function showCalculator()
+	{
+		return View::make('calculator');
 	}
 
 }
