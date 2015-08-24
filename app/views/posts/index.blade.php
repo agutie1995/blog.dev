@@ -7,8 +7,10 @@
 
 	@foreach ($posts as $post)
 		<h2>Title: {{{ $post->title }}}	</h2>
+		<p>Date Created: {{{ $post->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A') }}}</p>
 
-		<a href="{{{ action('PostsController@show', $post->id) }}}">Read Post</a>
+
+		<button><a href="{{{ action('PostsController@show', $post->id) }}}">Read Post</a></button>
 	@endforeach
 
 @stop

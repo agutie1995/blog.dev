@@ -34,9 +34,20 @@ class PostsController extends \BaseController {
 	public function store()
 	{
 	    // validation succeeded, create and save the post
-        $post = new Post();
 
-		return $this->validateAndSave($post);
+		$validator = Validator::make(Input::all(), Post::$rules);
+
+		if($validator->fails()) {
+			return Redirect::back()->withInput()->withErrors($validator);
+		} else {
+
+        	$post = new Post();
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+			$post->save();
+
+			return Redirect::action('PostsController@index');
+		}
 	}
 
 
@@ -75,9 +86,19 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		$post = Post::find($id);
+		$validator = Validator::make(Input::all(), Post::$rules);
 
-		return $this->validateAndSave($post);
+		if($validator->fails()) {
+			return Redirect::back()->withInput()->withErrors($validator);
+		} else {
+
+			$post = Post::find($id);
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+			$post->save();
+
+			return Redirect::action('PostsController@index');
+		}
 	}
 
 
@@ -95,20 +116,4 @@ class PostsController extends \BaseController {
 		return  Redirect::action('PostsController@index');
 	}
 
-	public function validateAndSave($post)
-	{
-
-		$validator = Validator::make(Input::all(), Post::$rules);
-
-		if($validator->fails()) {
-			return Redirect::back()->withInput()->withErrors($validator);
-		}
-
-		$post->title = Input::get('title');
-		$post->body = Input::get('body');
-		$post->save();
-
-		return Redirect::action('PostsController@index');
-			// , array($id));
-	}
 }
