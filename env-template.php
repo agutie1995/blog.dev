@@ -1,8 +1,13 @@
 <?php
 
 return array(
-    'DB_HOST' => '127.0.0.1',
-    'DB_NAME' => 'blog_db',
-    'DB_USER' => 'blog_user',
-    'DB_PASS' => 'password', // <-- Choose your own password here
+    'DB_HOST' => '',
+    'DB_NAME' => '',
+    'DB_USER' => '',
+    'DB_PASS' => '',
+
+    'USER_FIRST_NAME' => '';
+    'USER_LAST_NAME' => '';
+    'USER_EMAIL' => '';
+    'USER_PASSWORD' => '';
 );
