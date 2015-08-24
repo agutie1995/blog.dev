@@ -10,8 +10,9 @@ class PostsController extends \BaseController {
 	public function index()
 	{
 		// App::abort(404);
-		
+
     	$posts = Post::paginate(5);
+		Log::info(Input::all());
     	return View::make('posts.index')->with('posts', $posts);
 	}
 
@@ -24,6 +25,7 @@ class PostsController extends \BaseController {
 	public function create()
 	{
 		// show form be returning view
+		Log::info(Input::all());
 		return View::make('posts.create');
 	}
 
@@ -40,6 +42,7 @@ class PostsController extends \BaseController {
 		$validator = Validator::make(Input::all(), Post::$rules);
 
 		if($validator->fails()) {
+			Log::info('Could not create post ', Input::all());
 			Session::flash('errorMessage', 'Uh-oh! Something went wrong. Check the errors below:');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
@@ -49,6 +52,7 @@ class PostsController extends \BaseController {
 			$post->body = Input::get('body');
 			$post->save();
 
+			Log::info('Post was created successfully ', Input::all());
 			Session::flash('successMessage', 'You created ' . Input::get('title') . ' successfully!');
 			return Redirect::action('PostsController@index');
 		}
@@ -65,6 +69,12 @@ class PostsController extends \BaseController {
 	{
 		$post = Post::find($id);
 
+		if (!$post){
+			Log::info('404', Input::all());
+			Session::flash('errorMessage', 'Page was not found.');
+			App::abort(404);
+		}
+		Log::info(Input::all());
 		return View::make('posts.show')->with('post', $post);
 	}
 
@@ -78,6 +88,7 @@ class PostsController extends \BaseController {
 	public function edit($id)
 	{
 		$post = Post::find($id);
+		Log::info(Input::all());
 		return View::make('posts.edit')->with('post', $post);
 	}
 
@@ -93,6 +104,8 @@ class PostsController extends \BaseController {
 		$validator = Validator::make(Input::all(), Post::$rules);
 
 		if($validator->fails()) {
+			Log::info('Post was not edited successfully ', Input::all());
+			Session::flash('errorMessage', 'Uh-oh! Something went wrong. Check the errors below:');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
 
@@ -101,6 +114,8 @@ class PostsController extends \BaseController {
 			$post->body = Input::get('body');
 			$post->save();
 
+			Log::info('Post was edited successfully ', Input::all());
+			Session::flash('successMessage', 'You edited ' . Input::get('title') . ' successfully!');
 			return Redirect::action('PostsController@index');
 		}
 	}
@@ -115,8 +130,15 @@ class PostsController extends \BaseController {
 	public function destroy($id)
 	{
 		$post = Post::find($id);
-		$post->delete();
 
+		if (!$post){
+			Log::info(Input::all());
+			Session::flash('errorMessage', 'Page was not found.');
+			App::abort(404);
+		}
+
+		$post->delete();
+		Log::info(Input::all());
 		return  Redirect::action('PostsController@index');
 	}
 

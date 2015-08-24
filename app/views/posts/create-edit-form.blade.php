@@ -1,12 +1,11 @@
-@extends ('layouts.master')
+<div class="form-group @if($errors->has('title')) has-error @endif">
+    {{-- {{ Form::label('title', 'Title') }} --}}
+    {{ Form::text('title', null, ['class' => 'form-control', 'placeholder' => 'Title']) }}
+</div>
 
-@section('content')
-	<div class="form-group @if($errors->has('title')) has-error @endif">
-		{{ Form::text('title', null,  array('placeholder'=>'Title'), ['class' => 'form-control']) }}
-	</div>
-	<div class="form-group @if($errors->has('title')) has-error @endif">
-		{{ Form::textarea('title', null,  array('placeholder'=>'Contents Here'), ['class' => 'form-control']) }}
-	</div>		
-		<button>Save</button>
+<div class="form-group @if($errors->has('body')) has-error @endif">
+    {{-- {{ Form::label('body', 'Body') }} --}}
+    {{ Form::textarea('body', null, ['class' => 'form-control', 'placeholder' => 'Contents Here']) }}
+</div>
 
-@stop
+<button class="btn btn-primary">Save</button>
