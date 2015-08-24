@@ -9,6 +9,8 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
+		// App::abort(404);
+		
     	$posts = Post::paginate(5);
     	return View::make('posts.index')->with('posts', $posts);
 	}
@@ -38,6 +40,7 @@ class PostsController extends \BaseController {
 		$validator = Validator::make(Input::all(), Post::$rules);
 
 		if($validator->fails()) {
+			Session::flash('errorMessage', 'Uh-oh! Something went wrong. Check the errors below:');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
 
@@ -46,6 +49,7 @@ class PostsController extends \BaseController {
 			$post->body = Input::get('body');
 			$post->save();
 
+			Session::flash('successMessage', 'You created ' . Input::get('title') . ' successfully!');
 			return Redirect::action('PostsController@index');
 		}
 	}

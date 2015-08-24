@@ -42,14 +42,20 @@
         </div>
     </nav>
 
-
-	@if ($errors->has())
-		<div class="alert alert-danger" role="alert">
-			@foreach ($errors->all() as $error)
-				<li>{{{$error}}}</li>
-			@endforeach
-		</div>
+	@if (Session::has('successMessage'))
+	    <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
 	@endif
+	@if (Session::has('errorMessage'))
+	    <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
+	@endif
+
+		@if ($errors->has())
+			<div class="alert alert-danger" role="alert">
+				@foreach ($errors->all() as $error)
+					<li>{{{$error}}}</li>
+				@endforeach
+			</div>
+		@endif
 
 	<main class="container">
 
