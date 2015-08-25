@@ -3,8 +3,8 @@
 @section('content')
 
 	<h1>{{{ $post->title }}}</h1>
-	<p>{{ $post->user->first_name }}</p>
-	<p><?= $post->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A'); ?></p>
+	<small><em>By: {{{$post->user->first_name}}} {{{$post->user->last_name}}} </em></small><br>
+	<small>Date Created: {{{ $post->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A') }}}</small><br>
 	<p>{{{ $post->body }}}</p>
 
 	<a href="{{{ action('PostsController@edit', $post->id) }}}">Edit</a>

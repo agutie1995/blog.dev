@@ -48,6 +48,7 @@ class PostsController extends \BaseController {
         	$post = new Post();
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
+			$post->user_id = Auth::id();
 			$post->save();
 
 			Log::info('Post was created successfully ', Input::all());
