@@ -5,12 +5,13 @@
 
 	{{ $posts->links() }}
 
-	@foreach ($posts as $post)
-		<h2>Title: {{{ $post->title }}}	</h2>
-		<p>Date Created: {{{ $post->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A') }}}</p>
-
-
-		<button><a href="{{{ action('PostsController@show', $post->id) }}}">Read Post</a></button>
+	@foreach (Post::all() as $post)
+		<h3>Title: {{{ $post->title }}}	</h3>
+		<small><em>By: {{{$post->user->first_name}}} {{{$post->user->last_name}}} </em></small><br>
+		<small>Date Created: {{{ $post->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A') }}}</small><br>
+		{{{ Str::words($post->body, 20)}}}
+		<a href="{{{ action('PostsController@show', $post->id) }}}">Read More</a>
 	@endforeach
 
+	{{ $posts->links() }}
 @stop

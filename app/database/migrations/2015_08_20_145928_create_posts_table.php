@@ -17,14 +17,6 @@ class CreatePostsTable extends Migration {
 			$table->increments('id');
 			$table->string('title', 128);
 			$table->text('body');
-
-			// //forgein key for user_id
-			// $table->integer('user_id')
-			// 	->unsigned();
-			// $table->forgein('user_id')
-			// 	->references('id')
-			// 	->on('users');
-
 			$table->timestamps();
 		});
 	}

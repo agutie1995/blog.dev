@@ -3,6 +3,7 @@
 @section('content')
 
 	<h1>{{{ $post->title }}}</h1>
+	<p>{{ $post->user->first_name }}</p>
 	<p><?= $post->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A'); ?></p>
 	<p>{{{ $post->body }}}</p>
 
@@ -20,8 +21,6 @@
 		'use strict';
 
 		$('#deleteBtn').on('click', function(){
-			// console.log('The DELETE button was clicked');
-
 			var onConfirm = confirm('Are you sure you want to delete this post?');
 			console.log(onConfirm);
 

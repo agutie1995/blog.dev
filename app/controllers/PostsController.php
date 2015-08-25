@@ -9,9 +9,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		// App::abort(404);
-
-    	$posts = Post::paginate(5);
+    	$posts = Post::with('user')->paginate(5);
 		Log::info(Input::all());
     	return View::make('posts.index')->with('posts', $posts);
 	}
@@ -68,6 +66,13 @@ class PostsController extends \BaseController {
 	public function show($id)
 	{
 		$post = Post::find($id);
+
+		// $user = $post->user;
+
+		// $data = array(
+		// 	'post' => $post,
+		// 	'user' => $user
+		// );
 
 		if (!$post){
 			Log::info('404', Input::all());
