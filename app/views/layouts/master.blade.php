@@ -38,12 +38,12 @@
 	            		<li><a id="signin" href="{{{ action('HomeController@login') }}}">Sign In</a><li>
 	            		{{-- <li><a href="{{{ action('HomeController@signin') }}}">Sign Up</a></li> --}}
 	            	@endif
-	                <li class="active"><a href="#">Home</a></li>
+	                <li class="active"><a href="{{{ action('HomeController@showResume') }}}">Home</a></li>
 	                <li><a href="#">About</a></li>
-	                <li><a href="#">Blog</a></li>
+	                <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
 	                <li><a href="#">Contact</a></li>
 	            </ul>
-	            <form class="navbar-form navbar-left" role="search">
+	            <form class="navbar-form navbar-right" role="search">
 			    	<div class="form-group">
 			        	<input type="text" class="form-control" placeholder="Search">
 			    	</div>
