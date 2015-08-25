@@ -34,16 +34,21 @@ class HomeController extends BaseController {
 		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
 		    return Redirect::intended('/');
 		} else {
-			//Display session flash
+			Session::flash('errorMessage', 'Uh-oh! Something went wrong. Please try signing in again.');
 			//log email that tried to authenticate
 		    return Redirect::action('HomeController@login');
 		}
 	}
 
+	public function signup()
+	{
+		View::make('login');
+	}
+
 	public function doLogout()
 	{
 		Auth::logout();
-		//Display session flash
+		Session::flash('successMessage', 'You have been successfully logged out.');
 		return Redirect::to('/');
 	}
 
@@ -59,7 +64,7 @@ class HomeController extends BaseController {
 
 	public function showSimonSays()
 	{
-		return View::make('simonesays');
+		return View::make('simonsays');
 	}
 
 	public function showWhackAMole()
@@ -71,5 +76,4 @@ class HomeController extends BaseController {
 	{
 		return View::make('calculator');
 	}
-
 }

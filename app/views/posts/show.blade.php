@@ -7,11 +7,13 @@
 	<small>Date Created: {{{ $post->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A') }}}</small><br>
 	<p>{{{ $post->body }}}</p>
 
-	<a href="{{{ action('PostsController@edit', $post->id) }}}">Edit</a>
-	<button id="deleteBtn">Delete</button>
+	@if (Auth::check())
+		<a href="{{{ action('PostsController@edit', $post->id) }}}">Edit</a>
+		<button id="deleteBtn">Delete</button>
 
-	{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE', 'id' => 'formDelete')) }}
-	{{ Form::close() }}
+		{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE', 'id' => 'formDelete')) }}
+		{{ Form::close() }}
+	@endif
 
 @stop
 

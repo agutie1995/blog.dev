@@ -15,7 +15,17 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-    	$posts = Post::with('user')->paginate(5);
+    	$query = Post::with('user');
+    	
+    	// $query->where('title', 'like', 'P%');
+    	// $query->orWhereHas('user', function($q){
+    	// 	$q->where('first_name', 'Alex');
+    	// });
+    	// $query->orWhereHas('user', function($q){
+    	// 	$q->where('last_name', 'Gutierrez')
+    	// });
+
+		$posts = $query->orderBy('created_at', 'desc')->paginate(5);
 		Log::info(Input::all());
     	return View::make('posts.index')->with('posts', $posts);
 	}
@@ -28,7 +38,6 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-		// show form be returning view
 		Log::info(Input::all());
 		return View::make('posts.create');
 	}
@@ -41,8 +50,6 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-	    // validation succeeded, create and save the post
-
 		$validator = Validator::make(Input::all(), Post::$rules);
 
 		if($validator->fails()) {
@@ -50,7 +57,6 @@ class PostsController extends \BaseController {
 			Session::flash('errorMessage', 'Uh-oh! Something went wrong. Check the errors below:');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
-
         	$post = new Post();
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
@@ -120,7 +126,6 @@ class PostsController extends \BaseController {
 			Session::flash('errorMessage', 'Uh-oh! Something went wrong. Check the errors below:');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
-
 			$post = Post::find($id);
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
