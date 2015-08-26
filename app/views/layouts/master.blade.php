@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -30,7 +32,7 @@
 	                <li><a href="{{{ action('HomeController@showResume') }}}">About</a></li>
 	                <li><a href="#">Portfolio</a></li>
 	                <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
-	                <li><a href="#">Contact</a></li>
+	                <li><a href="{{{ action('HomeController@contact') }}}">Contact</a></li>
 	            	@if (Auth::check())
 		                <li class="dropdown navbar-right">
 		                	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, {{{Auth::user()->first_name}}} <span class="caret"></span></a>
@@ -66,10 +68,12 @@
 	<hr>
 	<footer>
 		<div class="wrapper">
-		  <a id="facebook-link" class="social" href="https://www.facebook.com/alexandra.gutierrez.79">&#62220;</a>
-		  <a id="twitter-link" class="social" href="https://www.twitter.com/later_alexgator">&#62217;</a>
-		  <div id="google-plus-link" class="social">&#62223;</div>
-		  <a id="linkedIn-link" class="social" href="https://www.linkedin.com/pub/alexandra-gutierrez/102/62a/54b">&#62232;</a>
+		  <a id="facebook-link" class="entypo-facebook social" href="https://www.facebook.com/alexandra.gutierrez.79"></a>
+		  <a id="twitter-link" class="entypo-twitter social" href="https://www.twitter.com/later_alexgator"></a>
+		  <a id="google-plus-link" class="entypo-gplus social" href="#"></a>
+		  <a id="linkedIn-link" class="entypo-linkedin social" href="https://www.linkedin.com/pub/alexandra-gutierrez/102/62a/54b"></a>
+		  <a id="instagram-link" class="social entypo-instagrem" href="https://www.instagram.com/later_alexgator"></a>
+		  <a id="pinterest-link" class="entypo-pinterest social" href="#"></a>
 		</div>
 	</footer>
 	
