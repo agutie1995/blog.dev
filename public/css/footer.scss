@@ -1,24 +1,17 @@
-@import url("http://weloveiconfonts.com/api/?family=entypo");
+@import url('http://weloveiconfonts.com/api/?family=entypo');
 
-body{
-	font-family: 'Arvo', serif;
-  	background: #ddd;
-}
-
-.dropdown{
-	color: #fff;
-}
-
-
-/*Footer ====================================================*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background: #ddd;
+}
+
 .wrapper {
-  padding: 25px 0 0;
+  padding: 120px 0 0;
   text-align: center;
 }
 

@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+
 
 	@yield('style')
 
@@ -25,8 +27,12 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav">
+	                <li><a href="{{{ action('HomeController@showResume') }}}">About</a></li>
+	                <li><a href="#">Portfolio</a></li>
+	                <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
+	                <li><a href="#">Contact</a></li>
 	            	@if (Auth::check())
-		                <li class="dropdown">
+		                <li class="dropdown navbar-right">
 		                	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, {{{Auth::user()->first_name}}} <span class="caret"></span></a>
 			                <ul class="dropdown-menu">
 			                    <li><a href="{{{ action('PostsController@create') }}}">Create a Post</a></li>
@@ -39,19 +45,7 @@
 	            		<li><a id="signin" href="{{{ action('HomeController@login') }}}">Sign In</a><li>
 	            		{{-- <li><a href="{{{ action('HomeController@signin') }}}">Sign Up</a></li> --}}
 	            	@endif
-	                <li><a href="{{{ action('HomeController@showResume') }}}">Home</a></li>
-	                <li><a href="#">About</a></li>
-	                <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
-	                <li><a href="#">Contact</a></li>
 	            </ul>
-	            <form class="navbar-form navbar-right" method="GET" role="search" action="{{ action('PostsController@index') }}">
-	            {{-- {{Form::open(array('action' => 'PostsController@index', 'method' => 'GET'))}} --}}
-			    	<div class="form-group">
-			        	<input name="search" type="text" class="form-control" placeholder="Search">
-			    	</div>
-			    	<button type="submit"class="btn btn-default">Submit</button>
-			    </form>
-			    {{-- {{Form::close()}} --}}
             </div>
         </div>
     </nav>
@@ -69,7 +63,15 @@
     	@yield('content')
 
 	</main>
-
+	<hr>
+	<footer>
+		<div class="wrapper">
+		  <a id="facebook-link" class="social" href="https://www.facebook.com/alexandra.gutierrez.79">&#62220;</a>
+		  <a id="twitter-link" class="social" href="https://www.twitter.com/later_alexgator">&#62217;</a>
+		  <div id="google-plus-link" class="social">&#62223;</div>
+		  <a id="linkedIn-link" class="social" href="https://www.linkedin.com/pub/alexandra-gutierrez/102/62a/54b">&#62232;</a>
+		</div>
+	</footer>
 	
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="/js/jquery.js"></script>
