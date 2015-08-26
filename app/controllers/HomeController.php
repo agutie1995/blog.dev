@@ -21,6 +21,11 @@ class HomeController extends BaseController {
         return Redirect::action('HomeController@showResume');
 	}
 
+	public function contact()
+	{
+		return View::make('contact');
+	}
+
 	public function login()
 	{
 		return View::make('login');

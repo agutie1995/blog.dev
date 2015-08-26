@@ -2,7 +2,7 @@
 
 @section('content')
 	<h1>All Posts</h1>
-{{-- $users->appends(array('sort' => 'votes'))->links(); --}}
+	<hr>
 	<div class="col-md-8">
 		{{ $posts->appends(array('search' => Input::get('search')))->links() }}
 		@foreach ($posts as $post)
@@ -22,7 +22,6 @@
             <h4>Blog Search</h4>
             <div class="input-group">
 	            <form class="navbar-form navbar-right" method="GET" role="search" action="{{ action('PostsController@index') }}">
-	            {{-- {{Form::open(array('action' => 'PostsController@index', 'method' => 'GET'))}} --}}
 			    	<div class="form-group">
 			        	<input name="search" type="text" class="form-control" placeholder="Search">
 			    	</div>
