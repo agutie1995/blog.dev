@@ -20,19 +20,6 @@
 		@endif
 	</div>
 	<div class="col-md-4">
-        <!-- Blog Search Well -->
-        <div class="well">
-            <h4>Blog Search</h4>
-            <div class="input-group">
-	            <form class="navbar-form navbar-right" method="GET" role="search" action="{{ action('PostsController@index') }}">
-			    	<div class="form-group">
-			        	<input name="search" type="text" class="form-control" placeholder="Search">
-			    	</div>
-			    	<button type="submit"class="btn btn-default">Submit</button>
-			    </form>
-            </div>
-            <!-- /.input-group -->
-        </div>
         <!-- Blog Categories Well -->
         <div class="well">
 			<h4><label for="subscribe-field">Follow Blog via Email</label></h4>

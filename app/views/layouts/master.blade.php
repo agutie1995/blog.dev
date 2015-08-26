@@ -5,15 +5,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
 
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
 
 	@yield('style')
-
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-static-top">
@@ -29,10 +27,10 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav">
-	                <li><a href="{{{ action('HomeController@showResume') }}}">About</a></li>
-	                <li><a href="#">Portfolio</a></li>
-	                <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
-	                <li><a href="{{{ action('HomeController@contact') }}}">Contact</a></li>
+	                <li><a href="{{{ action('HomeController@showResume') }}}"><i class="fa fa-user"></i>About</a></li>
+	                <li><a href="{{{ action('HomeController@portfolio') }}}"><i class="fa fa-folder-open"></i>Portfolio</a></li>
+	                <li><a href="{{{ action('PostsController@index') }}}"><i class="fa fa-pencil"></i>Blog</a></li>
+	                <li><a href="{{{ action('HomeController@contact') }}}"><i class="fa fa-envelope"></i>Contact</a></li>
 	            	@if (Auth::check())
 		                <li class="dropdown navbar-right">
 		                	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, {{{Auth::user()->first_name}}} <span class="caret"></span></a>
@@ -44,7 +42,7 @@
 		                	</ul>
 	                	</li>
 	            	@else
-	            		<li><a id="signin" href="{{{ action('HomeController@login') }}}">Sign In</a><li>
+	            		<li><a id="signin" href="{{{ action('HomeController@login') }}}"><i class="fa fa-sign-in"></i>Sign In</a><li>
 	            		{{-- <li><a href="{{{ action('HomeController@signin') }}}">Sign Up</a></li> --}}
 	            	@endif
 	            </ul>
@@ -65,15 +63,16 @@
     	@yield('content')
 
 	</main>
+
 	<hr>
 	<footer>
 		<div class="wrapper">
-		  <a id="facebook-link" class="entypo-facebook social" href="https://www.facebook.com/alexandra.gutierrez.79"></a>
-		  <a id="twitter-link" class="entypo-twitter social" href="https://www.twitter.com/later_alexgator"></a>
-		  <a id="google-plus-link" class="entypo-gplus social" href="#"></a>
-		  <a id="linkedIn-link" class="entypo-linkedin social" href="https://www.linkedin.com/pub/alexandra-gutierrez/102/62a/54b"></a>
-		  <a id="instagram-link" class="social entypo-instagrem" href="https://www.instagram.com/later_alexgator"></a>
-		  <a id="pinterest-link" class="entypo-pinterest social" href="#"></a>
+		  <a id="facebook-link" class="entypo-facebook social" href="https://www.facebook.com/alexandra.gutierrez.79" target="_blank"></a>
+		  <a id="twitter-link" class="entypo-twitter social" href="https://www.twitter.com/later_alexgator" target="_blank"></a>
+		  <a id="google-plus-link" class="entypo-gplus social" href="#" target="_blank"></a>
+		  <a id="linkedIn-link" class="entypo-linkedin social" href="https://www.linkedin.com/pub/alexandra-gutierrez/102/62a/54b" target="_blank"></a>
+		  <a id="instagram-link" class="social entypo-instagrem" href="https://www.instagram.com/later_alexgator" target="_blank"></a>
+		  <a id="pinterest-link" class="entypo-pinterest social" href="https://www.pinterest.com/lateralexgator/" target="_blank"></a>
 		</div>
 	</footer>
 	

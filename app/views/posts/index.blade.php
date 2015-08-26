@@ -25,7 +25,7 @@
 			    	<div class="form-group">
 			        	<input name="search" type="text" class="form-control" placeholder="Search">
 			    	</div>
-			    	<button type="submit"class="btn btn-default">Submit</button>
+			    	<button type="submit" class="btn btn-default">Submit</button>
 			    </form>
             </div>
             <!-- /.input-group -->
@@ -33,22 +33,22 @@
         <!-- Blog Categories Well -->
         <div class="well">
 			<h4><label for="subscribe-field">Follow Blog via Email</label></h4>
-				<div id="blog_subscription-3" class="input-group">
-		            <form class="navbar-form navbar-right" method="GET" role="search" action="{{ action('PostsController@index') }}">
-				    	<div class="form-group">
-				        	<input name="subscribe" type="text" class="form-control" placeholder="Not Working...Yet">
-							<p>
-								<input type="hidden" name="action" value="subscribe">
-								<input type="hidden" name="blog_id" value="1506909">
-								<input type="hidden" name="source" value="http:##">
-								<input type="hidden" name="sub-type" value="widget">
-								<input type="hidden" name="redirect_fragment" value="blog_subscription-3">
-								<input type="hidden" id="_wpnonce" name="_wpnonce" value="60c4b7d2eb">
-							</p>
-				    	</div>
-				    	<button type="submit" class="btn btn-default">Follow</button>
-				    </form>	
-				</div>
+			<div class="input-group">
+	            <form class="navbar-form navbar-right" method="GET" action="#">
+			    	<div class="form-group">
+			        	<input name="subscribe" type="text" class="form-control" placeholder="Not Working...Yet">
+						<p>
+							<input type="hidden" name="action" value="subscribe">
+							<input type="hidden" name="blog_id" value="1506909">
+							<input type="hidden" name="source" value="http:##">
+							<input type="hidden" name="sub-type" value="widget">
+							<input type="hidden" name="redirect_fragment" value="blog_subscription">
+							<input type="hidden" id="_wpnonce" name="_wpnonce" value="60c4b7d2eb">
+						</p>
+			    	</div>
+			    	<button type="submit" class="btn btn-default">Follow</button>
+			    </form>	
+			</div>
             <!-- /.input-group -->
         </div>
         <!-- Side Widget Well -->

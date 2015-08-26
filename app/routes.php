@@ -13,21 +13,18 @@
 
 Route::get('/', 'HomeController@showWelcome');
 
-Route::get('/contact', 'HomeController@contact');
+Route::resource('/posts', 'PostsController');
 
 Route::get('/login', 'HomeController@login');
 Route::post('/login', 'HomeController@doLogin');
 Route::get('/signup', 'HomeController@signup');
 Route::get('/logout', 'HomeController@doLogout');
 
-Route::resource('/posts', 'PostsController');
-
 Route::get('/resume', 'HomeController@showResume');
 
-Route::get('/portfolio', 'HomeController@showPortfolio');
-
+Route::get('/portfolio', 'HomeController@portfolio');
 Route::get('/simonsays', 'HomeController@showSimonSays');
-
 Route::get('/whackamole', 'HomeController@showWhackAMole');
-
 Route::get('/calculator', 'HomeController@showCalculator');
+
+Route::get('/contact', 'HomeController@contact');

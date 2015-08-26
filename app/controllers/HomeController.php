@@ -21,16 +21,10 @@ class HomeController extends BaseController {
         return Redirect::action('HomeController@showResume');
 	}
 
-	public function contact()
-	{
-		return View::make('contact');
-	}
-
 	public function login()
 	{
 		return View::make('login');
 	}
-
 	public function doLogin()
 	{
 		$email = Input::get('email');
@@ -44,12 +38,6 @@ class HomeController extends BaseController {
 		    return Redirect::action('HomeController@login');
 		}
 	}
-
-	public function signup()
-	{
-		View::make('login');
-	}
-
 	public function doLogout()
 	{
 		Auth::logout();
@@ -62,23 +50,25 @@ class HomeController extends BaseController {
 		return View::make('resume');
 	}
 
-	public function showPortfolio()
+	public function portfolio()
 	{
 		return View::make('portfolio');
 	}
-
 	public function showSimonSays()
 	{
 		return View::make('simonsays');
 	}
-
 	public function showWhackAMole()
 	{
 		return View::make('whackamole');
 	}	
-
 	public function showCalculator()
 	{
 		return View::make('calculator');
+	}
+
+	public function contact()
+	{
+		return View::make('contact');
 	}
 }

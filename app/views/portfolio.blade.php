@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
 @section('content')
-	<h1>Resume</h1>
+	<h1>Portfolio</h1>
 	<hr>
 @stop
