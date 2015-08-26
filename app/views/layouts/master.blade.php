@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 
 	@yield('style')
@@ -38,17 +39,19 @@
 	            		<li><a id="signin" href="{{{ action('HomeController@login') }}}">Sign In</a><li>
 	            		{{-- <li><a href="{{{ action('HomeController@signin') }}}">Sign Up</a></li> --}}
 	            	@endif
-	                <li class="active"><a href="{{{ action('HomeController@showResume') }}}">Home</a></li>
+	                <li><a href="{{{ action('HomeController@showResume') }}}">Home</a></li>
 	                <li><a href="#">About</a></li>
 	                <li><a href="{{{ action('PostsController@index') }}}">Blog</a></li>
 	                <li><a href="#">Contact</a></li>
 	            </ul>
-	            <form class="navbar-form navbar-right" role="search">
+	            <form class="navbar-form navbar-right" method="GET" role="search" action="{{ action('PostsController@index') }}">
+	            {{-- {{Form::open(array('action' => 'PostsController@index', 'method' => 'GET'))}} --}}
 			    	<div class="form-group">
-			        	<input type="text" class="form-control" placeholder="Search">
+			        	<input name="search" type="text" class="form-control" placeholder="Search">
 			    	</div>
-			    	<button type="submit" class="btn btn-default">Submit</button>
+			    	<button type="submit"class="btn btn-default">Submit</button>
 			    </form>
+			    {{-- {{Form::close()}} --}}
             </div>
         </div>
     </nav>

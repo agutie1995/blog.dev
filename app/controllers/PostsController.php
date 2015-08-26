@@ -16,14 +16,21 @@ class PostsController extends \BaseController {
 	public function index()
 	{
     	$query = Post::with('user');
-    	
-    	// $query->where('title', 'like', 'P%');
-    	// $query->orWhereHas('user', function($q){
-    	// 	$q->where('first_name', 'Alex');
-    	// });
-    	// $query->orWhereHas('user', function($q){
-    	// 	$q->where('last_name', 'Gutierrez')
-    	// });
+
+    	if (Input::has('search')){
+	    	$search = Input::get('search');
+	    	$query->where('title', 'LIKE', '%' . $search . '%');
+
+	    	$query->orWhereHas('user', function($q){
+	    		$search = Input::get('search');
+	    		$q->where('first_name', 'LIKE', '%' . $search . '%');
+	    	});
+	    	$query->orWhereHas('user', function($q){
+	    		$search = Input::get('search');
+	    		$q->where('last_name', 'LIKE', '%' . $search . '%');
+	    	});
+	    }
+
 
 		$posts = $query->orderBy('created_at', 'desc')->paginate(5);
 		Log::info(Input::all());
