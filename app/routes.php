@@ -24,7 +24,7 @@ Route::get('/resume', 'HomeController@showResume');
 
 Route::get('/portfolio', 'HomeController@portfolio');
 Route::get('/simonsays', 'HomeController@showSimonSays');
-Route::get('/whackamole', 'HomeController@showWhackAMole');
+Route::get('/portfolio/whackamole', 'HomeController@showWhackAMole');
 Route::get('/calculator', 'HomeController@showCalculator');
 
 Route::get('/contact', 'HomeController@contact');

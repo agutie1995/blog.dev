@@ -69,15 +69,17 @@
 		<div class="wrapper">
 		  <a id="facebook-link" class="entypo-facebook social" href="https://www.facebook.com/alexandra.gutierrez.79" target="_blank"></a>
 		  <a id="twitter-link" class="entypo-twitter social" href="https://www.twitter.com/later_alexgator" target="_blank"></a>
-		  <a id="google-plus-link" class="entypo-gplus social" href="#" target="_blank"></a>
+		  <a id="google-plus-link" class="entypo-gplus social" href="https://plus.google.com/115191459348083464621/" target="_blank"></a>
 		  <a id="linkedIn-link" class="entypo-linkedin social" href="https://www.linkedin.com/pub/alexandra-gutierrez/102/62a/54b" target="_blank"></a>
 		  <a id="instagram-link" class="social entypo-instagrem" href="https://www.instagram.com/later_alexgator" target="_blank"></a>
 		  <a id="pinterest-link" class="entypo-pinterest social" href="https://www.pinterest.com/lateralexgator/" target="_blank"></a>
+		  <a id="github-link" class="entypo-github social" href="https://github.com/agutie1995/" target="_blank"></a>
 		</div>
 	</footer>
 	
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="/js/jquery.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com//jquery-2.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	@yield('script')
 </body>

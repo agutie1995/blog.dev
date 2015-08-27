@@ -40,11 +40,6 @@
         setTimeout(getRandomSquare, 1000);
     };
 
-    //sound
-    function laser(sound){
-        $('#laser').play();
-    }
-
     //click function to make mole disappear when user clicks
         //add points
         //end game
