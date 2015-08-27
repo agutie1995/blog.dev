@@ -1,0 +1,21 @@
+#backstretch{
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  overflow: hidden;
+  z-index: -999999;
+  margin: 0px;
+  padding: 0px;
+  height: 1024px;
+  width: 1280px;
+}
+
+.cover-font, .cover-font:link{
+  color: #fff;
+  vertical-align: 50%;
+  text-align: center;
+}
+
+#toTop:link, #toTop:hover, #toTop:visited{
+  color: red;
+}

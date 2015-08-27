@@ -11,7 +11,7 @@
 	            	{{-- <div class="icn-center"><i class="fa fa-link "></i> --}}
 	            	</div>
 	            </div>
-	            <img src="/img/whack_a_mole.png" alt="Whack_a_Mole" class="img-responsive" style="opacity: 1; filter: none;">
+	            <img src="/img/whack_a_mole.png" alt="Whack_a_Mole" class="grayscale img-responsive" style="opacity: 1; filter: none;">
 	         	<div class="desc-portfolio">
 	         		<h5>Whack-A-Mole</h5><br>
 	         		{{-- <small>a Web Design</small> --}}
@@ -26,7 +26,7 @@
 	            	{{-- <div class="icn-center"><i class="fa fa-link "></i> --}}
 	            	</div>
 	            </div>
-	            <img src="/img/simple_simon.png" alt="Simple_Simon" class="img-responsive" style="opacity: 1; filter: none;">
+	            <img src="/img/simple_simon.png" alt="Simple_Simon" class="grayscale img-responsive" style="opacity: 1; filter: none;">
 	         	<div class="desc-portfolio">
 	         		<h5>Simple Simon</h5><br>
 	         		{{-- <small>a Web Design</small> --}}
@@ -41,7 +41,7 @@
 	            	{{-- <div class="icn-center"><i class="fa fa-link "></i> --}}
 	            	</div>
 	            </div>
-	            <img src="/img/calculator.png" alt="JS_Calculator" class="img-responsive" style="opacity: 1; filter: none;">
+	            <img src="/img/calculator.png" alt="JS_Calculator" class="grayscale img-responsive" style="opacity: 1; filter: none;">
 	         	<div class="desc-portfolio">
 	         		<h5>JavaScript Calculator</h5><br>
 	         		{{-- <small>a Web Design</small> --}}
