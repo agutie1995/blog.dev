@@ -9,8 +9,9 @@
 			<h3>{{{ $post->title }}}	</h3>
 			<small>By: {{{$post->user->first_name}}} {{{$post->user->last_name}}} | 
 			Date Created: {{{ $post->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A') }}}</small><br>
-			<p>{{{ Str::words($post->body, 20)}}}</p>x
-			<a class="read-more" href="{{{ action('PostsController@show', $post->id) }}}">Read More</a><br>
+			<p>{{{ Str::words($post->body, 20)}}}
+			<a class="read-more" href="{{{ action('PostsController@show', $post->id) }}}">Read More</a>
+			<p>
 		@endforeach
 
 		{{ $posts->appends(array('search' => Input::get('search')))->links() }}
@@ -53,7 +54,7 @@
         </div>
         <!-- Side Widget Well -->
         <div class="well">
-            <h4>Side Widget Well</h4>
+            <h4>Tags</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
         </div>
     </div>
