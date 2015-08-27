@@ -4,13 +4,12 @@
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<!-- Optional theme -->
-	{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> --}}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
-	{{-- <link rel="stylesheet" type="text/css" href="/css/main.css"> --}}
-
+	
 	@yield('style')
 </head>
 <body>
@@ -23,14 +22,14 @@
 	                <span class="icon-bar"></span>
 	                <span class="icon-bar"></span>
 	            </button>
-	            <a class="navbar-brand" href="#">Alexandra Gutierrez</a>
+	            <a class="navbar-brand" href="{{{ action('HomeController@showWelcome') }}}">Alexandra Gutierrez</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav">
 	                <li><a href="{{{ action('HomeController@showResume') }}}"><i class="fa fa-user"></i>About</a></li>
 	                <li><a href="{{{ action('HomeController@portfolio') }}}"><i class="fa fa-folder-open"></i>Portfolio</a></li>
 	                <li><a href="{{{ action('PostsController@index') }}}"><i class="fa fa-pencil"></i>Blog</a></li>
-	                <li><a href="{{{ action('HomeController@contact') }}}"><i class="fa fa-envelope"></i>Contact</a></li>
+	                <li><a href="{{{ action('HomeController@contact') }}}"><i class="fa fa-envelope"></i>Contact Me</a></li>
 	            	@if (Auth::check())
 		                <li class="signin dropdown">
 		                	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, {{{Auth::user()->first_name}}} <span class="caret"></span></a>
@@ -64,7 +63,7 @@
 
 	</main>
 
-	<hr>
+	<hr class="style2">
 	<footer>
 		<div class="wrapper">
 		  <a id="facebook-link" class="entypo-facebook social" href="https://www.facebook.com/alexandra.gutierrez.79" target="_blank"></a>

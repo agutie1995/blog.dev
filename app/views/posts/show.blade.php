@@ -8,7 +8,7 @@
 	<h1>{{{ $post->title }}}</h1>
 	<small>By: {{{$post->user->first_name}}} {{{$post->user->last_name}}} | 
 	Date Created: {{{ $post->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A') }}}</small><br>
-	<hr>
+	<hr class="style2">
 		<p>{{{ $post->body }}}</p>
 
 		@if (Auth::check())

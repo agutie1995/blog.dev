@@ -2,15 +2,15 @@
 
 @section('content')
 	<h1>All Posts</h1>
-	<hr>
+	<hr class="style2">
 	<div class="col-md-8">
 		{{ $posts->appends(array('search' => Input::get('search')))->links() }}
 		@foreach ($posts as $post)
 			<h3>{{{ $post->title }}}	</h3>
 			<small>By: {{{$post->user->first_name}}} {{{$post->user->last_name}}} | 
 			Date Created: {{{ $post->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A') }}}</small><br>
-			{{{ Str::words($post->body, 20)}}}
-			<a href="{{{ action('PostsController@show', $post->id) }}}">Read More</a><br>
+			<p>{{{ Str::words($post->body, 20)}}}</p>x
+			<a class="read-more" href="{{{ action('PostsController@show', $post->id) }}}">Read More</a><br>
 		@endforeach
 
 		{{ $posts->appends(array('search' => Input::get('search')))->links() }}
@@ -21,7 +21,7 @@
         <div class="well">
             <h4>Blog Search</h4>
             <div class="input-group">
-	            <form class="navbar-form navbar-right" method="GET" role="search" action="{{ action('PostsController@index') }}">
+	            <form class="search-input navbar-form navbar-right" method="GET" role="search" action="{{ action('PostsController@index') }}">
 			    	<div class="form-group">
 			        	<input name="search" type="text" class="form-control" placeholder="Search">
 			    	</div>
@@ -34,7 +34,7 @@
         <div class="well">
 			<h4><label for="subscribe-field">Follow Blog via Email</label></h4>
 			<div class="input-group">
-	            <form class="navbar-form navbar-right" method="GET" action="#">
+	            <form class="subscribe-input navbar-form navbar-right" method="GET" action="#">
 			    	<div class="form-group">
 			        	<input name="subscribe" type="text" class="form-control" placeholder="Not Working...Yet">
 						<p>

@@ -2,7 +2,7 @@
 
 @section('content')
 	<h1>Portfolio</h1>
-	<hr>
+	<hr class="style2">
 	<ul>
 		<li class="mix webdesign mix_all" style=" display: inline-block; opacity: 1;">
 	        <div class="item-portfolio" id="whackamole-portfolio">
