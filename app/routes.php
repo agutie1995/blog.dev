@@ -23,7 +23,7 @@ Route::get('/logout', 'HomeController@doLogout');
 Route::get('/resume', 'HomeController@showResume');
 
 Route::get('/portfolio', 'HomeController@portfolio');
-Route::get('/simonsays', 'HomeController@showSimonSays');
+Route::get('/portfolio/simplesimon', 'HomeController@showSimpleSimon');
 Route::get('/portfolio/whackamole', 'HomeController@showWhackAMole');
 Route::get('/calculator', 'HomeController@showCalculator');
 

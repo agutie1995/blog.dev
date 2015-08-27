@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/whackamole.css') }}">
+    <link rel="stylesheet" type="text/css" href="/css/whackamole.css">
 </head>
 
 <body>
@@ -28,6 +28,6 @@
         </div>
     </div>
 
-{{-- <script type="text/javascript" src="https://code.jquery.com//jquery-2.1.1.min.js"></script> --}}
+<script type="text/javascript" src="https://code.jquery.com//jquery-2.1.1.min.js"></script>
 <script src="/js/whackamole.js"></script>
 </body>

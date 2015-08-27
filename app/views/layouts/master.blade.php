@@ -4,12 +4,12 @@
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> --}}
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	{{-- <link rel="stylesheet" type="text/css" href="/css/main.css"> --}}
 
 	@yield('style')
 </head>
@@ -32,7 +32,7 @@
 	                <li><a href="{{{ action('PostsController@index') }}}"><i class="fa fa-pencil"></i>Blog</a></li>
 	                <li><a href="{{{ action('HomeController@contact') }}}"><i class="fa fa-envelope"></i>Contact</a></li>
 	            	@if (Auth::check())
-		                <li class="dropdown navbar-right">
+		                <li class="signin dropdown">
 		                	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, {{{Auth::user()->first_name}}} <span class="caret"></span></a>
 			                <ul class="dropdown-menu">
 			                    <li><a href="{{{ action('PostsController@create') }}}">Create a Post</a></li>
@@ -42,7 +42,7 @@
 		                	</ul>
 	                	</li>
 	            	@else
-	            		<li><a id="signin" href="{{{ action('HomeController@login') }}}"><i class="fa fa-sign-in"></i>Sign In</a><li>
+	            		<li class="signin"><a href="{{{ action('HomeController@login') }}}"><i class="fa fa-sign-in"></i>Sign In</a><li>
 	            		{{-- <li><a href="{{{ action('HomeController@signin') }}}">Sign Up</a></li> --}}
 	            	@endif
 	            </ul>

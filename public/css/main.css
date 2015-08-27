@@ -5,22 +5,39 @@ body{
   	background: lightgrey;
 }
 
-.well {
-	margin-top: 15px;
-}
-
-.side-input {
-	border-radius: 5px;
-}
-
-.dropdown{
-	color: #fff;
-}
-
 i {
 	margin-right: 5px;
 }
 
+/*NavBar ======================================================*/
+.dropdown{
+}
+.signin {
+  text-align: right;
+  color: #fff;
+}
+
+/*Blog =======================================================*/
+.well {
+  margin-top: 15px;
+}
+
+.side-input {
+  border-radius: 5px;
+}
+
+/*Protfolio ======================*/
+.mix{
+  margin: 5px 49px;
+}
+
+.desc-portfolio{
+  text-align: center;
+}
+
+.preview-portfolio, .preview-portfolio:hover {
+  color: #333;
+}
 
 /*Footer ====================================================*/
 * {
