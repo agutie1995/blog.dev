@@ -40,7 +40,7 @@
 	<div class="col-md-4">
 		<div class="well">
 			<h4>Contact Info</h4>
-			<p><i class="fa fa-home"></i>Street St. San Antonio, TX</p>
+			<p><i class="fa fa-home"></i>112 E Pecan St, San Antonio, TX 78205</p>
 			<p><i class="fa fa-envelope"></i> agutie95@yahoo.com </p>
 			{{-- <p><i class="fa fa-phone"></i> (###)###-####</p> --}}
 			<p></p>
