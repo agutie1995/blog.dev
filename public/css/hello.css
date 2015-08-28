@@ -1,61 +1,66 @@
-html, body {
-  height: 100%;
-  font-family: 'Arvo', serif;
+body {
+    /*height: 100%;*/
+    font-family: 'Arvo', serif;
+    background-color: #000;
 }
 
-#backstretch{
-  left: 0px;
-  top: 0px;
-  position: fixed;
-  overflow: hidden;
-  z-index: -999999;
-  margin: 0px;
-  padding: 0px;
-  height: 1024px;
-  width: 1280px;
+.container {
+    margin: 0;
+    margin-right: 0;
+    padding: 0;
+    top: 0;
+}
+
+#img-backstretch{
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    overflow: hidden;
+    z-index: -999999;
+    background-color: #000;
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: 100%;
 }
 
 #cover-photo {
-  position: absolute;
-  background-size: cover;
-  float: right;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  z-index: -999999;
-  max-width: 100% !important;
-  min-width: 25%;
-  height: auto !important;
-  left: 0px;
-  top: -100px;
+    background-color: #000;
+    background-size: cover;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    max-width: 100% !important;
+    min-width: 40%;
+    height: auto !important;
+    left: 0;
 }
 
 #cover-text {
-  width: 30%;
-  vertical-align: middle;
-  margin-left: 200px;
-  margin-top: 200px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    vertical-align: middle;
 }
 
 .cover-font{
-  color: #fff;
-  text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    color: #fff;
+    text-align: center;
 }
 
-#learn-more:link{
-  margin-left: 140px;
-  /*margin-right: auto;*/
-}
-
-#inner {
-  border: 1px solid red;
+#learn-more{
+    color: #fff;
+    font-size: 1.25em;
 }
 
 #photo-by {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-right: 5px;
-  font-size: .75em;
-  color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: .9em;
+    color: #fff !important;
 }
