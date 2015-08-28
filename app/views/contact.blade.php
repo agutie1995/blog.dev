@@ -14,7 +14,7 @@
 	<div class="col-md-8">
 		<div id="map-canvas"></div>
 
-    	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEJDiyzmynCaGn1EZ5Xr0a3yMaC9FuqPg"></script>
+    	<script src="https://maps.googleapis.com/maps/api/js?key=" . $_ENV('CONTACT_GOOGLE_API') ></script>
 
 	    <script type="text/javascript">
 		    'use strict';
