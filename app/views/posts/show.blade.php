@@ -4,7 +4,7 @@
 
 	{{-- <img src="http://placehold.it/1100x250"> --}}
 
-	<div class="col-md-8">
+	<div>
 	<h1>{{{ $post->title }}}</h1>
 	<small>By: {{{$post->user->first_name}}} {{{$post->user->last_name}}} | 
 	Date Created: {{{ $post->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A') }}}</small><br>
@@ -19,7 +19,7 @@
 			{{ Form::close() }}
 		@endif
 	</div>
-	<div class="col-md-4">
+{{-- 	<div class="col-md-4">
         <!-- Blog Categories Well -->
         <div class="well">
 			<h4><label for="subscribe-field">Follow Blog via Email</label></h4>
@@ -46,7 +46,7 @@
             <h4>Tags</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
         </div>
-    </div>
+    </div> --}}
 @stop
 
 @section('script')

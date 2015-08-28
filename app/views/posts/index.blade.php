@@ -5,14 +5,17 @@
 	<hr class="style2">
 	<div class="col-md-8">
 		{{ $posts->appends(array('search' => Input::get('search')))->links() }}
-		@foreach ($posts as $post)
-			<h3>{{{ $post->title }}}	</h3>
-			<small>By: {{{$post->user->first_name}}} {{{$post->user->last_name}}} | 
-			Date Created: {{{ $post->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A') }}}</small><br>
-			<p>{{{ Str::words($post->body, 20)}}}
-			<a class="read-more" href="{{{ action('PostsController@show', $post->id) }}}">Read More</a>
-			<p>
-		@endforeach
+	@forelse ($posts as $key => $value)
+		<h3>{{{ $value->title }}}	</h3>
+		<small>By: {{{$value->user->first_name}}} {{{$value->user->last_name}}} | 
+		Date Created: {{{ $value->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A') }}}</small><br>
+		<p>{{{ Str::words($value->body, 20)}}}
+		<a class="read-more" href="{{{ action('PostsController@show', $value->id) }}}">Read More</a>
+		<p>
+
+    @empty
+        <h3>There aren't any posts to display at this time.</h3>
+    @endforelse
 
 		{{ $posts->appends(array('search' => Input::get('search')))->links() }}
 	</div>
@@ -32,7 +35,7 @@
             <!-- /.input-group -->
         </div>
         <!-- Blog Categories Well -->
-        <div class="well">
+{{--         <div class="well">
 			<h4><label for="subscribe-field">Follow Blog via Email</label></h4>
 			<div class="input-group">
 	            <form class="subscribe-input navbar-form navbar-right" method="GET" action="#">
@@ -56,7 +59,7 @@
         <div class="well">
             <h4>Tags</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
-        </div>
+        </div> --}}
     </div>
 @stop
 

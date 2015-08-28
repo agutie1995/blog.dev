@@ -1,27 +1,25 @@
 <head>
-    <link rel="stylesheet" href="/css/hello.css";
-</head>
-<body class="bs-cover">
-    <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                <div class="masthead clearfix">
-                    <div class="inner">
-                        <div class="navbar-top-fixed-space "><div class="clearfix"></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Latest compiled and minified CSS -->
+    {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> --}}
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
-    <div id="backstretch" style="left: 0px; top: 0px; position: fixed; overflow: hidden; z-index: -999999; margin: 0px; padding: 0px; height: 1024px; width: 1280px;">
-        <img src="/img/texas_star.jpg" style="position: absolute; cover;margin: 0px; padding: 0px; border: none; z-index: -999999; width: 100%; height: 100%; left: 0px; top: -217.321456538763px;">
-        <div class="inner cover-font">
-            <h1 class="cover-font">Alexandra Gutierrez</h1>
-            <h3 class="cover-font lead"> Full-Stack Web Developer</h3>
-            <a href="{{{ action('HomeController@showResume') }}}" class="cover-font btn btn-lg btn-default" >Learn more</a>
-        </div> 
-        {{-- <p class="cover-font">  --}}
+    <link rel="stylesheet" href="/css/hello.css">;
+</head>
+<body>
+    <div id="backstretch">
+        <img id="cover-photo" class="img-responsive" alt="Null" src="/img/cover_photo.jpg">
     </div>
-    <a href="https://www.flickr.com/photos/memoriesbymike/" target="_blank" id="toTop">Photo By: Mike Boening</a>
+        <div id="cover-text">
+            <h1 class="cover-font img-responsive">Alexandra Gutierrez</h1>
+            <h3 class="cover-font lead img-responsive"> Full-Stack Web Developer</h3>
+            <a href="{{{ action('HomeController@showResume') }}}" id="learn-more" class="cover-font img-responsive" >Learn more</a>
+        </div> 
+        <a id="photo-by" class="img-responsive" href="http://thestreetphotog.blogspot.com/" target="_blank">Photo By: Jesse Acosta</a>
+
+    <script src="/js/jquery.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com//jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>

@@ -1,3 +1,8 @@
+html, body {
+  height: 100%;
+  font-family: 'Arvo', serif;
+}
+
 #backstretch{
   left: 0px;
   top: 0px;
@@ -10,12 +15,47 @@
   width: 1280px;
 }
 
-.cover-font, .cover-font:link{
+#cover-photo {
+  position: absolute;
+  background-size: cover;
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  z-index: -999999;
+  max-width: 100% !important;
+  min-width: 25%;
+  height: auto !important;
+  left: 0px;
+  top: -100px;
+}
+
+#cover-text {
+  width: 30%;
+  vertical-align: middle;
+  margin-left: 200px;
+  margin-top: 200px;
+}
+
+.cover-font{
   color: #fff;
-  vertical-align: 50%;
   text-align: center;
 }
 
-#toTop:link, #toTop:hover, #toTop:visited{
-  color: red;
+#learn-more:link{
+  margin-left: 140px;
+  /*margin-right: auto;*/
+}
+
+#inner {
+  border: 1px solid red;
+}
+
+#photo-by {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 5px;
+  font-size: .75em;
+  color: #fff;
 }

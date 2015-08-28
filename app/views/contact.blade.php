@@ -39,13 +39,13 @@
 
 	<div class="col-md-4">
 		<div class="well">
-			<h3>Contact Info</h3>
+			<h4>Contact Info</h4>
 			<p><i class="fa fa-home"></i>Street St. San Antonio, TX</p>
-			<p><i class="fa fa-envelope"></i> example@example.com </p>
-			<p><i class="fa fa-phone"></i> (###)###-####</p>
+			<p><i class="fa fa-envelope"></i> agutie95@yahoo.com </p>
+			{{-- <p><i class="fa fa-phone"></i> (###)###-####</p> --}}
 			<p></p>
 		</div>
-		<div class="well">
+{{-- 		<div class="well">
 			<h4><label for="subscribe-field">Follow Blog via Email</label></h4>
 			<div class="input-group">
 	            <form class="subscribe-input navbar-form navbar-right" method="GET" action="#">
@@ -64,7 +64,7 @@
 			    </form>	
 			</div>
             <!-- /.input-group -->
-        </div>
+        </div> --}}
 	</div>
 
 @stop
