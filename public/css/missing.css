@@ -1,4 +1,10 @@
-body {
-	background-image: url('/img/tfios_okay_copy.jpg');
-	background-repeat: no-repeat;
+/*body {*/
+	/*background-image: url('/img/tfios_okay_copy.jpg');*/
+	/*background-repeat: no-repeat;*/
+	/*background-color: #1BC2EC;*/
+/*}*/
+
+#four-oh-four {
+	width: 100%;
+	height: auto !important;
 }
