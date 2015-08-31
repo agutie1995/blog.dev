@@ -28,7 +28,14 @@
                             </div>
                         </div>
                         <div class="item">
-                            Quote<br>
+                            Sometimes the questions are complicated and the answers
+                            are simple.<br>
+                            <div id="attribution">
+                                - Dr. Seuss
+                            </div>
+                        </div>
+{{--                         <div class="item">
+                            <br>
                             <div id="attribution">
                                 - Person
                             </div>
@@ -44,13 +51,7 @@
                             <div id="attribution">
                                 - Person
                             </div>
-                        </div>
-                        <div class="item">
-                            Quote<br>
-                            <div id="attribution">
-                                - Person
-                            </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
