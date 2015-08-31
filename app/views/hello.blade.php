@@ -13,9 +13,47 @@
         <div class="col-md-7">
             <div id="cover-text">
                 <h1 class="cover-font img-responsive">Alexandra Gutierrez</h1>
-                <h3 class="cover-font img-responsive">Full-Stack Web Developer</h3><br>
+                <h3 class="cover-font img-responsive">Full-Stack Web Developer</h3>
                 <a id="learn-more" class="cover-font img-responsive" href="{{{ action('HomeController@showResume') }}}">Learn more</a>
             </div> 
+            <div class="box-note">
+                <div id="slider-note" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            Everyone is a genius, but if you judge a fish by its
+                            ability to climb a tree, it will live its whole life
+                            believing that it is stupid.<br>
+                            <div id="attribution">
+                                - Albert Einstein
+                            </div>
+                        </div>
+                        <div class="item">
+                            Quote<br>
+                            <div id="attribution">
+                                - Person
+                            </div>
+                        </div>
+                        <div class="item">
+                            Quote<br>
+                            <div id="attribution">
+                                - Person
+                            </div>
+                        </div>
+                        <div class="item">
+                            Quote<br>
+                            <div id="attribution">
+                                - Person
+                            </div>
+                        </div>
+                        <div class="item">
+                            Quote<br>
+                            <div id="attribution">
+                                - Person
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="col-md-5">

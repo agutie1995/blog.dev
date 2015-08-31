@@ -5,53 +5,42 @@ body {
 
 .container {
     margin: 0;
-    margin-right: 0;
     padding: 0;
     top: 0;
 }
 
-#img-backstretch{
-    left: 0px;
-    top: 0px;
+.col-md-7 {
+    height: 100%;
+    padding: 0;
+}
+
+/*Image ===========================================*/
+#img-backstretch {
+    left: 0;
+    top: 0;
     position: fixed;
     overflow: hidden;
     z-index: -999999;
     background-color: #000;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     height: auto;
     width: 100%;
 }
 
 #cover-photo {
     background-color: #000;
-    background-size: cover;
     float: right;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     border: none;
     max-width: 100% !important;
     min-width: 40%;
-    height: auto !important;
-    left: 0;
+    height: auto;
 }
 
-#cover-text {
-    width: 100%;
-    margin: auto;
-    padding: 0;
-    vertical-align: middle;
-}
-
-.cover-font{
-    position: relative;
-    color: #fff;
-    text-align: center;
-}
-
-#learn-more{
-    color: #fff;
-    font-size: 1.25em;
+.cover-font {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #photo-by {
@@ -60,4 +49,46 @@ body {
     right: 0;
     font-size: .9em;
     color: #fff !important;
+}
+
+/*Text ==================================*/
+#cover-text {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    top: 20%;
+}
+
+.cover-font {
+    color: #fff;
+    text-align: center;
+}
+
+#learn-more {
+    color: #fff;
+    font-size: 1.25em;
+}
+
+/*Quote carousel ==============================*/
+.box-note {
+    background-color: rgba(121, 121, 121, 0.6);
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 55%;
+    height: 15%;
+    margin: auto !important;
+    position: absolute;
+    top: 50%;
+    left: 22.5%;
+}
+
+.item{
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+#attribution {
+    float: right;
 }
