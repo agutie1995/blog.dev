@@ -22,7 +22,7 @@
 		ga('create', 'UA-66961002-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-	
+
 	<nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
             <div class="navbar-header">
@@ -83,7 +83,6 @@
 		  <a id="linkedIn-link" class="entypo-linkedin social" href="https://www.linkedin.com/pub/alexandra-gutierrez/102/62a/54b" target="_blank"></a>
 		  <a id="github-link" class="entypo-github social" href="https://github.com/agutie1995/" target="_blank"></a>
 		  <a id="instagram-link" class="social entypo-instagrem" href="https://www.instagram.com/later_alexgator" target="_blank"></a>
-		  <a id="pinterest-link" class="entypo-pinterest social" href="https://www.pinterest.com/lateralexgator/" target="_blank"></a>
 		</div>
 	</footer>
 	

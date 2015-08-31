@@ -1,9 +1,8 @@
 @extends('layouts.master')
 
 <style>
-
     #map-canvas {
-        width: 70	0px;
+        width: 700px;
         height: 500px;
     }
 </style>
