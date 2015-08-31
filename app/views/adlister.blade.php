@@ -31,6 +31,16 @@
 	        	</a>
 	        </div>
 	    </li>
+	    <li class="mix adlister-images">
+	        <div class="item-portfolio">
+	         	<a href="/img/adlister_screenshots/adlister_myaccount.png" class="preview-portfolio imgWrapper image-popup">
+	            <img src="/img/adlister_screenshots/adlister_myaccount_small.png" alt="adlister_img" class="grayscale img-responsive">
+	            <div class="desc-portfolio">
+	         		<h5>My Account</h5>
+	         	</div>
+	        	</a>
+	        </div>
+	    </li>
 		<li class="mix adlister-images">
 	        <div class="item-portfolio">
 	         	<a href="/img/adlister_screenshots/adlister_single_show.png" class="preview-portfolio imgWrapper image-popup">
