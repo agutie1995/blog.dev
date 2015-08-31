@@ -7,7 +7,7 @@
 @section('content')
 	<h1>AdLister Gallery</h1>
 	<hr class="style2">
-	<p>Co-created by: <a href="https://github.com/remington9" target="_blank" id="rem_github">Remington Williams</a> || <a href="https://github.com/adLister/AdLister" target="_blank" id="adlister_repo">Click Here</a> to view to GitHub repository.
+	<p>Co-created by: <a href="https://github.com/remington9" target="_blank" id="rem_github">Remington Williams</a> || <a href="https://github.com/adLister/AdLister" target="_blank" id="adlister_repo">Click Here</a> to view the GitHub repository.
 	</p>
 
 	<ul class="gallery">
