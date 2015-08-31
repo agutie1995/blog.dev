@@ -20,40 +20,30 @@
                 <div id="slider-note" class="carousel slide" data-ride="carousel" data-interval="5000">
                     <div class="carousel-inner">
                         <div class="item active">
-                            "Sometimes the questions are complicated and the answers
+                            <p>"Sometimes the questions are complicated and the answers
                             are simple."<br>
-                            <div id="attribution">
-                                - Dr. Seuss
-                            </div>
+                            - Dr. Seuss</p>
                         </div>
                         <div class="item">
-                            "Everyone is a genius, but if you judge a fish by its
+                            <p>"Everyone is a genius, but if you judge a fish by its
                             ability to climb a tree, it will live its whole life
                             believing that it is stupid."<br>
-                            <div id="attribution">
-                                - Albert Einstein
-                            </div>
+                            - Albert Einstein</p>
                         </div>
                         <div class="item">
-                            "We need never be hopeless because we can never be
+                            <p>"We need never be hopeless because we can never be
                             irreperably broken."<br>
-                            <div id="attribution">
-                                - John Green, <em>Looking for Alaska</em>
-                            </div>
+                            - John Green, <em>Looking for Alaska</em></p>
                         </div>
                         <div class="item">
-                            "Life starts all over again when it gets crisp in
+                            <p>"Life starts all over again when it gets crisp in
                             the fall."<br>
-                            <div id="attribution">
-                                - F. Scott Fitzgerald, <em>The Great Gatsby</em>
-                            </div>
+                            - F. Scott Fitzgerald, <em>The Great Gatsby</em></p>
                         </div>
                         <div class="item">
-                            "The world breaks every one, and afterward, many are
+                            <p>"The world breaks every one, and afterward, many are
                             strong at the broken places."<br>
-                            <div id="attribution">
-                                - Ernest Hemingway, <em>A Farewell to Arms</em>
-                            </div>
+                            - Ernest Hemingway, <em>A Farewell to Arms</em></p>
                         </div>
                     </div>
                 </div>

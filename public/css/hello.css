@@ -75,17 +75,22 @@ body {
     background-color: rgba(121, 121, 121, 0.6);
     border: 1px solid #000;
     border-radius: 10px;
-    width: 60%;
-    height: 25%;
+    width: 55%;
+    height: 20%;
     margin: auto !important;
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 22.5%;
 }
 
-.item{
+.item {
     color: #fff;
-    text-align: center;
-    vertical-align: middle;
     padding: 5px;
+    display: table;
+}
+
+.item p {
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center; 
 }
