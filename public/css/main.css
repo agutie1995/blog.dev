@@ -80,6 +80,7 @@ hr.style2 {
 /*Protfolio ======================*/
 .mix{
   margin: 5px 49px;
+  display: inline-block;
 }
 
 .desc-portfolio{
@@ -88,6 +89,15 @@ hr.style2 {
 
 .preview-portfolio, .preview-portfolio:hover {
   color: #333;
+}
+
+.gallery {
+  width: 100%;
+  height: auto;
+}
+
+#adlister_repo, #rem_github {
+  color: #000;
 }
 
 img.grayscale

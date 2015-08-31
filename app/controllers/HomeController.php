@@ -65,6 +65,10 @@ class HomeController extends BaseController {
 	{
 		return View::make('calculator');
 	}
+	public function showAdlister()
+	{
+		return View::make('adlister');
+	}
 
 	public function contact()
 	{
