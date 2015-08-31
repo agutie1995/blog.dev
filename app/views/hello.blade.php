@@ -20,6 +20,13 @@
                 <div id="slider-note" class="carousel slide" data-ride="carousel" data-interval="5000">
                     <div class="carousel-inner">
                         <div class="item active">
+                            Sometimes the questions are complicated and the answers
+                            are simple.<br>
+                            <div id="attribution">
+                                - Dr. Seuss
+                            </div>
+                        </div>
+                        <div class="item">
                             Everyone is a genius, but if you judge a fish by its
                             ability to climb a tree, it will live its whole life
                             believing that it is stupid.<br>
@@ -28,30 +35,26 @@
                             </div>
                         </div>
                         <div class="item">
-                            Sometimes the questions are complicated and the answers
-                            are simple.<br>
+                            We need never be hopeless because we can never be
+                            irreperably broken<br>
                             <div id="attribution">
-                                - Dr. Seuss
-                            </div>
-                        </div>
-{{--                         <div class="item">
-                            <br>
-                            <div id="attribution">
-                                - Person
+                                - John Green, <em>Looking for Alaska</em>
                             </div>
                         </div>
                         <div class="item">
-                            Quote<br>
+                            The world breaks every one and afterward many are
+                            strong at the broken places.<br>
                             <div id="attribution">
-                                - Person
+                                - Ernest Hemingway, <em>A Farewell to Arms</em>
                             </div>
                         </div>
                         <div class="item">
-                            Quote<br>
+                            Life starts all over again when it gets crisp in
+                            the fall.<br>
                             <div id="attribution">
-                                - Person
+                                - F. Scott Fitzgerald, <em>The Great Gatsby</em>
                             </div>
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
             </div>
