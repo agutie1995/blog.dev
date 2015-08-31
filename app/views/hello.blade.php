@@ -20,39 +20,39 @@
                 <div id="slider-note" class="carousel slide" data-ride="carousel" data-interval="5000">
                     <div class="carousel-inner">
                         <div class="item active">
-                            Sometimes the questions are complicated and the answers
-                            are simple.<br>
+                            "Sometimes the questions are complicated and the answers
+                            are simple."<br>
                             <div id="attribution">
                                 - Dr. Seuss
                             </div>
                         </div>
                         <div class="item">
-                            Everyone is a genius, but if you judge a fish by its
+                            "Everyone is a genius, but if you judge a fish by its
                             ability to climb a tree, it will live its whole life
-                            believing that it is stupid.<br>
+                            believing that it is stupid."<br>
                             <div id="attribution">
                                 - Albert Einstein
                             </div>
                         </div>
                         <div class="item">
-                            We need never be hopeless because we can never be
-                            irreperably broken<br>
+                            "We need never be hopeless because we can never be
+                            irreperably broken."<br>
                             <div id="attribution">
                                 - John Green, <em>Looking for Alaska</em>
                             </div>
                         </div>
                         <div class="item">
-                            The world breaks every one and afterward many are
-                            strong at the broken places.<br>
+                            "Life starts all over again when it gets crisp in
+                            the fall."<br>
                             <div id="attribution">
-                                - Ernest Hemingway, <em>A Farewell to Arms</em>
+                                - F. Scott Fitzgerald, <em>The Great Gatsby</em>
                             </div>
                         </div>
                         <div class="item">
-                            Life starts all over again when it gets crisp in
-                            the fall.<br>
+                            "The world breaks every one, and afterward, many are
+                            strong at the broken places."<br>
                             <div id="attribution">
-                                - F. Scott Fitzgerald, <em>The Great Gatsby</em>
+                                - Ernest Hemingway, <em>A Farewell to Arms</em>
                             </div>
                         </div>
                     </div>
