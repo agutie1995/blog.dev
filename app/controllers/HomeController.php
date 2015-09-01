@@ -44,6 +44,11 @@ class HomeController extends BaseController {
 		return Redirect::to('/');
 	}
 
+	public function aboutme()
+	{
+		return View::make('aboutme');
+	}
+
 	public function showResume()
 	{
 		return View::make('resume');
