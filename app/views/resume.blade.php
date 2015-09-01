@@ -13,7 +13,8 @@
           			<span class="date">current</span>
           			<div class="event-content">
             			<h4>Graphic Design</h4>
-            			<h5>San Antonio College</h5>
+            			<h5 class="location">San Antonio College</h5>
+            			<h5>2014 - current</h5>
             			<p>As a web designer and developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and building attractive websites.</p>
           			</div>
         		</div>
@@ -21,7 +22,8 @@
           			<span class="date">2015</span>
           			<div class="event-content">
             			<h4>Full Stack Web Developer</h4>
-            			<h5>Codeup</h5>
+            			<h5 class="location">Codeup</h5>
+            			<h5>June 2015 - current</h5>
             			<p>I worked as a Web Developer at Google for 2 years. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.</p>
           			</div>
         		</div>
@@ -38,7 +40,8 @@
 	          		<span class="date">2015</span>
 	          		<div class="event-content">
 	            		<h4>KIN Assistant</h4>
-	            		<h5>NEISD</h5>
+	            		<h5 class="location">N.E.I.S.D.</h5>
+	            		<h5>July 2014 - May 2015</h5>
 	            		<p>I worked as a Web Developer at Google for 2 years. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.</p>
 	          		</div>
 	        	</div>
@@ -46,15 +49,17 @@
 		          	<span class="date">2014</span>
 		          	<div class="event-content">
 		            	<h4>Shift Manager</h4>
-		            	<h5>Pump It Up</h5>
+		            	<h5 class="location">Pump It Up</h5>
+		            	<h5>Aug 2013 - Aug 2014</h5>
 		            	<p>As a web designer and developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and building attractive websites.</p>
 		          	</div>
 		        </div>
 		        <div class="item-event last">
-		          	<span class="date">2013</span>
+		          	<span class="date">2014</span>
 		          	<div class="event-content">
 		            	<h4>Rides Operator</h4>
-		            	<h5>Six Flags Fiesta Texas</h5>
+		            	<h5 class="location">Six Flags Fiesta Texas</h5>
+		            	<h5>April 2013 - Jan 2014</h5>
 		            	<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 		          	</div>
 		        </div>

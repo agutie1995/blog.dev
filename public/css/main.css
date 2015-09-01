@@ -14,11 +14,11 @@ hr.style2 {
     border-top: 3px double #FFF;
 }
 
-/*.search-input, .subscribe-input {
+.search-input, .subscribe-input {
   border-radius: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  }*/
+  /*border-top-left-radius: 5px;*/
+  /*border-bottom-left-radius: 5px;*/
+  }
 
 /*NavBar ======================================================*/
 .navbar-inverse, .navbar-brand{
@@ -78,7 +78,6 @@ hr.style2 {
     padding-bottom: 15px;
     margin-bottom: 20px;
     font-size: 1.75em;
-    /*font-weight: 700;*/
 }
 
 .icn-title {
@@ -150,7 +149,7 @@ hr.style2 {
     padding-top: 10px;
 }
 
-.time-line .item-event .event-content h5 {
+.time-line .item-event .event-content>.location {
   text-transform: uppercase;
   font-weight: 700;
   color: #000;

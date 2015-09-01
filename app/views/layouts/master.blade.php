@@ -36,10 +36,11 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav">
-	                <li><a href="{{{ action('HomeController@showResume') }}}"><i class="fa fa-user"></i>Resumé</a></li>
+	            	{{-- <li><a href="{{{ action('HomeController@showResume') }}}"><i class="fa fa-user"></i>About Me</a></li> --}}
+	                <li><a href="{{{ action('HomeController@showResume') }}}"><i class="fa fa-newspaper-o"></i>Resumé</a></li>
 	                <li><a href="{{{ action('HomeController@portfolio') }}}"><i class="fa fa-folder-open"></i>Portfolio</a></li>
 	                <li><a href="{{{ action('PostsController@index') }}}"><i class="fa fa-pencil"></i>Blog</a></li>
-	                <li><a href="{{{ action('HomeController@contact') }}}"><i class="fa fa-envelope"></i>Contact Me</a></li>
+	                <li><a href="{{{ action('HomeController@contact') }}}"><i class="fa fa-envelope"></i>Contact</a></li>
 {{-- 	            	@if (Auth::check())
 		                <li class="signin dropdown">
 		                	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, {{{Auth::user()->first_name}}} <span class="caret"></span></a>
