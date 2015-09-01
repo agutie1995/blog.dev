@@ -43,6 +43,25 @@ hr.style2 {
     color: #FFF;
 }
 
+/*About Me =====*/
+.identity-area label:after {
+    content: ":";
+    position: absolute;
+    right: 0;
+    width: 5px;
+    top: 0;
+}
+
+.img-profile {
+    margin: auto;
+}
+
+.aboutme-title {
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
 /*Paginator ==================================================*/
 .pagination>li>a{
     color: #000;
