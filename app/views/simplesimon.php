@@ -3,11 +3,13 @@
 </head>
 
 <body>
-	<input id='roundNumber' name='round' type='text' placeholder='Simple Simon'>
+    <input id='roundNumber' name='round' type='text' placeholder='Simple Simon'>
     <div id='gameBoard'>
         <div id='buttons'>
             <div id='red' class='color'></div>
             <div id='blue' class='color'></div>
+            <!-- <div id="center"> -->
+            <!-- </div> -->
             <div id='green' class='color'></div>
             <div id='yellow' class='color'></div>
         </div>

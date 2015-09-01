@@ -15,7 +15,7 @@
             			<h4>Graphic Design</h4>
             			<h5 class="location">San Antonio College</h5>
             			<h5>2014 - current</h5>
-            			<p>As a web designer and developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and building attractive websites.</p>
+            			{{-- <p>As a web designer and developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and building attractive websites.</p> --}}
           			</div>
         		</div>
         		<div class="item-event">
@@ -24,7 +24,7 @@
             			<h4>Full Stack Web Developer</h4>
             			<h5 class="location">Codeup</h5>
             			<h5>June 2015 - current</h5>
-            			<p>I worked as a Web Developer at Google for 2 years. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.</p>
+            			<p>As a web developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and attractive websites.</p>
           			</div>
         		</div>
       		</div>
@@ -42,7 +42,7 @@
 	            		<h4>KIN Assistant</h4>
 	            		<h5 class="location">N.E.I.S.D.</h5>
 	            		<h5>July 2014 - May 2015</h5>
-	            		<p>I worked as a Web Developer at Google for 2 years. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.</p>
+	            		<p>I taught as an after school teacher to elementary-aged students, primarily first graders. I focused on reading, writing, math, and logic.</p>
 	          		</div>
 	        	</div>
 		        <div class="item-event">
@@ -51,7 +51,7 @@
 		            	<h4>Shift Manager</h4>
 		            	<h5 class="location">Pump It Up</h5>
 		            	<h5>Aug 2013 - Aug 2014</h5>
-		            	<p>As a web designer and developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and building attractive websites.</p>
+		            	<p>During the week I helped parents book parties and gave tours of the facility. On the weekends, I supervised staff to ensure a fun birthday party experience for the children and parents.</p>
 		          	</div>
 		        </div>
 		        <div class="item-event last">
@@ -60,7 +60,7 @@
 		            	<h4>Rides Operator</h4>
 		            	<h5 class="location">Six Flags Fiesta Texas</h5>
 		            	<h5>April 2013 - Jan 2014</h5>
-		            	<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		            	<p>Operated heavy machinery while providing a safe, fun, and friendly environment for park guests of all ages.</p>
 		          	</div>
 		        </div>
 	     	</div>
