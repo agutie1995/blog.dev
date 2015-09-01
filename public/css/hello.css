@@ -76,7 +76,7 @@ body {
     border: 1px solid #000;
     border-radius: 10px;
     width: 55%;
-    height: 20%;
+    height: auto;
     margin: auto !important;
     position: absolute;
     top: 50%;
@@ -84,13 +84,15 @@ body {
 }
 
 .item {
+    color: white;
+    vertical-align: middle;
+    height: auto;
+    resize: vertical;
+    overflow: auto;
     color: #fff;
-    padding: 5px;
-    display: table;
+    text-align: center;
 }
 
 .item p {
-    display: table-cell; 
-    vertical-align: middle; 
-    text-align: center; 
+    padding: 10px;
 }
