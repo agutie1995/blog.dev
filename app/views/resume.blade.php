@@ -9,24 +9,24 @@
 	    <h3 class="title with-icon"><span class="fa fa-book icn-title"></span> Education History</h3>
     	<div class="box-block">
     		<div class="time-line">
-        		<div class="item-event current">
-          			<span class="date">current</span>
-          			<div class="event-content">
-            			<h4>Graphic Design</h4>
-            			<h5 class="location">San Antonio College</h5>
-            			<h5>2014 - current</h5>
-            			{{-- <p>As a web designer and developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and building attractive websites.</p> --}}
-          			</div>
-        		</div>
-        		<div class="item-event">
-          			<span class="date">2015</span>
-          			<div class="event-content">
-            			<h4>Full Stack Web Developer</h4>
-            			<h5 class="location">Codeup</h5>
-            			<h5>June 2015 - current</h5>
-            			<p>As a web developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and attractive websites.</p>
-          			</div>
-        		</div>
+          		<div class="item-event current">
+            			<span class="date">current</span>
+            			<div class="event-content">
+                  			<h4>Graphic Design</h4>
+                  			<h5 class="location">San Antonio College</h5>
+                  			<h5>2014 - current</h5>
+                  			{{-- <p>As a web designer and developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and building attractive websites.</p> --}}
+            			</div>
+          		</div>
+          		<div class="item-event">
+            			<span class="date">2015</span>
+            			<div class="event-content">
+                  			<h4>Full Stack Web Developer</h4>
+                  			<h5 class="location">Codeup</h5>
+                  			<h5>June 2015 - current</h5>
+    {{--               			<p>As a web developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and attractive websites.</p> --}}
+            			</div>
+          		</div>
       		</div>
  	    </div>
 	    <!-- ========= End Time line section ===================================-->
@@ -42,7 +42,12 @@
 	            		<h4>KIN Assistant</h4>
 	            		<h5 class="location">N.E.I.S.D.</h5>
 	            		<h5>July 2014 - May 2015</h5>
-	            		<p>I taught as an after school teacher to elementary-aged students, primarily first graders. I focused on reading, writing, math, and logic.</p>
+	            		<ul>
+                            <li class="resume-li">Provided fun, safe after school learning environment</li>
+                            <li class="resume-li">Helped students further their abilities in math, reading, logic, and geography</li>
+                            <li class="resume-li">Played organized games with students during down time</li>
+                            <li class="resume-li">Responsible for redirection of students</li>
+                        <ul>
 	          		</div>
 	        	</div>
 		        <div class="item-event">
@@ -51,7 +56,16 @@
 		            	<h4>Shift Manager</h4>
 		            	<h5 class="location">Pump It Up</h5>
 		            	<h5>Aug 2013 - Aug 2014</h5>
-		            	<p>During the week I helped parents book parties and gave tours of the facility. On the weekends, I supervised staff to ensure a fun birthday party experience for the children and parents.</p>
+		            	<ul>
+                            <li class="resume-li">Handled cash and credit card payments</li>
+                            <li class="resume-li">Maintained an organized work space</li>
+                            <li class="resume-li">Assisted parents in booking parties over the phone and in person</li>
+                            <li class="resume-li">Engaged children during down time</li>
+                            <li class="resume-li">Created weekly staff schedules</li>
+                            <li class="resume-li">Managed staff of 20 employees</li>
+                            <li class="resume-li">Set-up and break down of party rooms according to schedule</li>
+                            <li class="resume-li">Supervised children during party playtime</li>
+                        </ul>
 		          	</div>
 		        </div>
 		        <div class="item-event last">
@@ -60,7 +74,11 @@
 		            	<h4>Rides Operator</h4>
 		            	<h5 class="location">Six Flags Fiesta Texas</h5>
 		            	<h5>April 2013 - Jan 2014</h5>
-		            	<p>Operated heavy machinery while providing a safe, fun, and friendly environment for park guests of all ages.</p>
+		            	<ul>
+                            <li class="resume-li">Operated park rides</li>
+                            <li class="resume-li">Responsible for maintaining park’s safety regulations before, after, and during ride operation</li>
+                            <li class="resume-li">Provided a fun, friendly, and safe environment for families</li>
+                        </ul>   
 		          	</div>
 		        </div>
 	     	</div>
@@ -77,29 +95,21 @@
             	<li>
               		<span class="caption-skill">HTML</span>
               		<div class="progress">
-                		<div class="progress-bar" style="width: 90%;">
-                  			<span>90% </span>
+                		<div class="progress-bar" style="width: 75%;">
+                  			<span>75% </span>
                 		</div>
               		</div>
             	</li>
                	<li>
               		<span class="caption-skill">CSS</span>
               		<div class="progress">
-                		<div class="progress-bar" style="width: 50%;">
-                  			<span>50% </span>
+                		<div class="progress-bar" style="width: 75%;">
+                  			<span>75% </span>
                 		</div>
               		</div>
             	</li>
             	<li>
               		<span class="caption-skill">JavaScript</span>
-              		<div class="progress">
-                		<div class="progress-bar" style="width: 70%;">
-                  			<span>70% </span>
-                		</div>
-              		</div>
-            	</li>
-            	<li>
-              		<span class="caption-skill">PHP</span>
               		<div class="progress">
                 		<div class="progress-bar" style="width: 60%;">
                   			<span>60% </span>
@@ -107,10 +117,18 @@
               		</div>
             	</li>
             	<li>
+              		<span class="caption-skill">PHP</span>
+              		<div class="progress">
+                		<div class="progress-bar" style="width: 50%;">
+                  			<span>50% </span>
+                		</div>
+              		</div>
+            	</li>
+            	<li>
               		<span class="caption-skill">MYSQL</span>
               		<div class="progress">
-                		<div class="progress-bar" style="width: 100%;">
-                  			<span>100% </span>
+                		<div class="progress-bar" style="width: 50%;">
+                  			<span>50% </span>
                 		</div>
               		</div>
             	</li>

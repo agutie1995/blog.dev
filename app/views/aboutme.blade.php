@@ -25,10 +25,6 @@
 					<div class="col-sm-8"> Alexandra Gutierrez</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-4"><label>Date of birth</label></div>
-					<div class="col-sm-8"> June 15, 1995</div>
-				</div>
-				<div class="row">
 					<div class="col-sm-4"><label>Location</label></div>
 					<div class="col-sm-8"> San Antonio, TX</div>
 				</div>

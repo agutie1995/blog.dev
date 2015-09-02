@@ -14,7 +14,7 @@
             <div id="cover-text">
                 <h1 class="cover-font img-responsive">Alexandra Gutierrez</h1>
                 <h3 class="cover-font img-responsive">Full-Stack Web Developer</h3>
-                <a id="learn-more" class="cover-font img-responsive" href="{{{ action('HomeController@aboutme') }}}">Learn more</a>
+                <a id="learn-more" class="cover-font img-responsive" href="{{{ action('HomeController@showResume') }}}">ENTER</a>
             </div> 
             <div class="box-note">
                 <div id="slider-note" class="carousel slide" data-ride="carousel" data-interval="5000">

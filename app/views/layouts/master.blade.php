@@ -36,7 +36,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav">
-	            	<li><a href="{{{ action('HomeController@aboutme') }}}"><i class="fa fa-user"></i>About Me</a></li>
+	            	{{-- <li><a href="{{{ action('HomeController@aboutme') }}}"><i class="fa fa-user"></i>About Me</a></li> --}}
 	                <li><a href="{{{ action('HomeController@showResume') }}}"><i class="fa fa-newspaper-o"></i>Resumé</a></li>
 	                <li><a href="{{{ action('HomeController@portfolio') }}}"><i class="fa fa-folder-open"></i>Portfolio</a></li>
 	                <li><a href="{{{ action('PostsController@index') }}}"><i class="fa fa-pencil"></i>Blog</a></li>
