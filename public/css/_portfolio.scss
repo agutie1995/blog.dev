@@ -1,0 +1,33 @@
+/* Portfolio =================================================*/
+.mix {
+    margin: 5px 49px;
+    display: inline-block;
+}
+
+.desc-portfolio {
+    text-align: center;
+}
+
+.preview-portfolio, .preview-portfolio:hover {
+    color: #000;
+}
+
+.gallery {
+    width: 100%;
+    height: auto;
+}
+
+#adlister_repo, #rem_github {
+    color: #000;
+}
+
+img.grayscale {
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+}
+
+img.grayscale:hover {
+    filter: none;
+    -webkit-filter: none;
+}

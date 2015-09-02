@@ -1,9 +1,5 @@
 @extends('layouts.master')
 
-@section('style')
-	{{-- <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/portfolio.css') }}"> --}}
-@stop
-
 @section('content')
 	<h1>Portfolio</h1>
 	<hr class="style2">

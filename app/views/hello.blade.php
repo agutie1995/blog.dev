@@ -12,8 +12,8 @@
     <div class="container">
         <div class="col-md-7">
             <div id="cover-text">
-                <h1 class="cover-font img-responsive">Alexandra Gutierrez</h1>
-                <h3 class="cover-font img-responsive">Full-Stack Web Developer</h3>
+                <h1 class="name cover-font img-responsive">Alexandra Gutierrez</h1>
+                <h3 class="title cover-font img-responsive">Full-Stack Web Developer</h3>
                 <a id="learn-more" class="cover-font img-responsive" href="{{{ action('HomeController@showResume') }}}">ENTER</a>
             </div> 
             <div class="box-note">

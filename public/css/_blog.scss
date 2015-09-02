@@ -1,0 +1,47 @@
+/*Blog =======================================================*/
+.read-more, .read-more:hover {
+    color: #000;
+}
+
+.well {
+    margin-top: 15px;
+}
+
+.side-input {
+    border-radius: 5px;
+}
+
+/*Paginator ==================================================*/
+.pagination {
+	li {
+		a{
+    		color: #000;
+    	}
+    }
+}
+
+.paginator {
+	a{
+    	color: #000;
+    }
+}
+
+.pagination {
+	.active {
+		span:hover {
+		    background-color: #000;
+		    border-color: #000;
+		    color: #A9A9A9;
+		}
+	}
+}
+
+.pagination {
+	.active {
+		span {
+		    background-color: #F5F5F5;
+		    border-color: #F5F5F5;
+		    color: #A9A9A9;
+		}
+	}
+}

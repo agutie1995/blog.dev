@@ -1,0 +1,54 @@
+@import 'variables';
+@import 'navbar';
+@import 'aboutme';
+@import 'resume';
+@import 'portfolio';
+@import 'blog';
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+
+/* Main =====================================================*/
+body{
+    font-family: $font-family;
+    background: $grey;
+    color: #000;
+}
+
+i {
+    margin-right: 5px;
+}
+
+hr {
+    border-top: 3px double #FFF;
+}
+
+/*Footer ====================================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    padding: 25px 0 0;
+    text-align: center;
+}
+
+.social, {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    line-height: 50px;
+    font-family: Entypo;
+    font-size: 28px;
+    text-align: center;
+    color: #000;
+    border-radius: 10px;
+    background: #FFF;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.social:hover{
+    color: $grey;
+}
