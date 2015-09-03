@@ -95,16 +95,16 @@
             	<li>
               		<span class="caption-skill">HTML</span>
               		<div class="progress">
-                		<div class="progress-bar" style="width: 75%;">
-                  			<span>75% </span>
+                		<div class="progress-bar" style="width: 70%;">
+                  			<span>70% </span>
                 		</div>
               		</div>
             	</li>
                	<li>
               		<span class="caption-skill">CSS</span>
               		<div class="progress">
-                		<div class="progress-bar" style="width: 75%;">
-                  			<span>75% </span>
+                		<div class="progress-bar" style="width: 70%;">
+                  			<span>70% </span>
                 		</div>
               		</div>
             	</li>
