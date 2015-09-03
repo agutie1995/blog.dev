@@ -215,6 +215,9 @@ img.grayscale:hover {
   -webkit-filter: none; }
 
 /*Blog =======================================================*/
+#index-title {
+  color: #1977F6; }
+
 .read-more, .read-more:hover {
   color: #000; }
 
