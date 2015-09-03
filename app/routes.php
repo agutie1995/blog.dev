@@ -15,10 +15,10 @@ Route::get('/', 'HomeController@showWelcome');
 
 Route::resource('/posts', 'PostsController');
 
-Route::get('/login', 'HomeController@login');
-Route::post('/login', 'HomeController@doLogin');
-Route::get('/signup', 'HomeController@signup');
-Route::get('/logout', 'HomeController@doLogout');
+// Route::get('/login', 'HomeController@login');
+// Route::post('/login', 'HomeController@doLogin');
+// Route::get('/signup', 'HomeController@signup');
+// Route::get('/logout', 'HomeController@doLogout');
 
 Route::get('/aboutme', 'HomeController@aboutme');
 

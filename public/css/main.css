@@ -1,14 +1,14 @@
 /*NavBar =====================================================*/
 @import url("http://weloveiconfonts.com/api/?family=entypo");
 .navbar-inverse, .navbar-brand {
-  background-image: linear-gradient(to bottom, #000 0, #000 100%);
+  background-image: linear-gradient(to bottom, #000 0, #2D2D2D 100%);
   color: #FFF; }
 
 .navbar-inverse .navbar-brand {
-  color: #D7D7D7; }
+  color: #DDD; }
 
 .navbar-inverse .navbar-nav li a {
-  color: #D7D7D7; }
+  color: #DDD; }
 
 .dropdown-menu li a {
   color: #000; }
@@ -76,7 +76,7 @@
   left: -32px;
   top: -10px;
   border-radius: 50%;
-  background: #42FFCB;
+  background: #25CED1;
   display: inline-block;
   padding: 12px 7px;
   text-align: center;
@@ -84,10 +84,10 @@
   font-weight: bold;
   color: white;
   font-size: 16px;
-  border: 5px solid #D7D7D7; }
+  border: 5px solid #DDD; }
 
 .time-line .item-event.current .date {
-  border: 5px solid #D7D7D7;
+  border: 5px solid #DDD;
   background: #1977F6; }
 
 .time-line .item-event.current .event-content {
@@ -121,7 +121,7 @@
   margin-bottom: 5px; }
 
 .progress {
-  background-image: linear-gradient(to bottom, #D0D0D0, #F5F5F5 100%);
+  background-image: linear-gradient(to bottom, #DDD, #FFF 100%);
   background-repeat: repeat-x;
   height: 20px;
   margin-bottom: 20px;
@@ -182,8 +182,14 @@
 .desc-portfolio {
   text-align: center; }
 
-.preview-portfolio, .preview-portfolio:hover {
+.preview-portfolio {
   color: #000; }
+
+.preview-portfolio:hover {
+  color: #25CED1; }
+
+.item-portfolio-name {
+  color: #1977F6; }
 
 .gallery {
   width: 100%;
@@ -216,25 +222,30 @@ img.grayscale:hover {
 
 /*Paginator ==================================================*/
 .pagination li a {
-  color: #000; }
+  background-color: #1977F6;
+  color: #FFF; }
 
 .paginator a {
   color: #000; }
 
+.pagination .disabled span {
+  background-color: #1977F6;
+  color: #FFF; }
+
 .pagination .active span:hover {
-  background-color: #000;
-  border-color: #000;
-  color: #A9A9A9; }
+  background-color: #25CED1;
+  border-color: #25CED1;
+  color: #FFF; }
 
 .pagination .active span {
-  background-color: #F5F5F5;
-  border-color: #F5F5F5;
-  color: #A9A9A9; }
+  background-color: #FFF;
+  border-color: #FFF;
+  color: #1977F6; }
 
 /* Main =====================================================*/
 body {
   font-family: "Arvo", serif;
-  background: #D7D7D7;
+  background: #DDD;
   color: #000; }
 
 i {
@@ -269,6 +280,6 @@ hr {
   cursor: pointer; }
 
 .social:hover {
-  color: #D7D7D7; }
+  color: #25CED1; }
 
 /*# sourceMappingURL=main.css.map */

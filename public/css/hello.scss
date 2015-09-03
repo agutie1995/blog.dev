@@ -41,10 +41,6 @@ body {
     height: auto;
 }
 
-.cover-font {
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
 #photo-by {
     position: absolute;
     bottom: 0;
@@ -65,6 +61,11 @@ body {
 .cover-font {
     color: #fff;
     text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.name {
+    color: $blue;
 }
 
 #learn-more {

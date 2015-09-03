@@ -1,4 +1,8 @@
 /*Blog =======================================================*/
+// #index-title {
+// 	color: $blue;
+// }
+
 .read-more, .read-more:hover {
     color: #000;
 }
@@ -15,7 +19,8 @@
 .pagination {
 	li {
 		a{
-    		color: #000;
+    		background-color: $blue;
+    		color: #FFF;
     	}
     }
 }
@@ -26,12 +31,21 @@
     }
 }
 
+.pagination{
+	.disabled{
+		span{
+			background-color: $blue;
+			color: #FFF;
+		}
+	}
+}
+
 .pagination {
 	.active {
 		span:hover {
-		    background-color: #000;
-		    border-color: #000;
-		    color: #A9A9A9;
+		    background-color: $light-blue;
+		    border-color: $light-blue;
+		    color: #FFF;
 		}
 	}
 }
@@ -39,9 +53,9 @@
 .pagination {
 	.active {
 		span {
-		    background-color: #F5F5F5;
-		    border-color: #F5F5F5;
-		    color: #A9A9A9;
+		    background-color: #FFF;
+		    border-color: #FFF;
+		    color: $blue;
 		}
 	}
 }

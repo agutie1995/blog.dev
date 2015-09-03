@@ -9,7 +9,7 @@
 	         	<a href="{{{ action('HomeController@showWhackAMole') }}}" class="preview-portfolio imgWrapper image-popup">
 	            <img src="/img/whack_a_mole.png" alt="Whack_a_Mole" class="grayscale img-responsive" style="opacity: 1; filter: none;">
 	         	<div class="desc-portfolio">
-	         		<h5>Whack-A-Mole</h5>
+	         		<h5 class="item-portfolio-name">Whack-A-Mole</h5>
 	         	</div>
 	        	</a>
 	        </div>
@@ -19,7 +19,7 @@
 	         	<a href="{{{ action('HomeController@showCalculator') }}}" class="preview-portfolio imgWrapper image-popup">
 	            <img src="/img/calculator.png" alt="JS_Calculator" class="grayscale img-responsive" style="opacity: 1; filter: none;">
 	         	<div class="desc-portfolio">
-	         		<h5>JavaScript Calculator</h5>
+	         		<h5 class="item-portfolio-name">JavaScript Calculator</h5>
 	         	</div>
 	        	</a>
 	        </div>
@@ -29,7 +29,7 @@
 	         	<a href="{{{ action('HomeController@showSimpleSimon') }}}" class="preview-portfolio imgWrapper image-popup">
 	            <img src="/img/simple_simon.png" alt="Simple_Simon" class="grayscale img-responsive" style="opacity: 1; filter: none;">
 	         	<div class="desc-portfolio">
-	         		<h5>Simple Simon</h5>
+	         		<h5 class="item-portfolio-name">Simple Simon</h5>
 	         	</div>
 	        	</a>
 	        </div>
@@ -39,7 +39,7 @@
 	         	<a href="{{{ action('HomeController@showAdlister') }}}" class="preview-portfolio imgWrapper image-popup">
 	            <img src="/img/adlister.png" alt="JS_Calculator" class="grayscale img-responsive" style="opacity: 1; filter: none;">
 	         	<div class="desc-portfolio">
-	         		<h5>AdLister Gallery</h5>
+	         		<h5 class="item-portfolio-name">AdLister Gallery</h5>
 	         	</div>
 	        	</a>
 	        </div>

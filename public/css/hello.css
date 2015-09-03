@@ -34,9 +34,6 @@ body {
   min-width: 40%;
   height: auto; }
 
-.cover-font {
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
-
 #photo-by {
   position: absolute;
   bottom: 0;
@@ -54,7 +51,11 @@ body {
 
 .cover-font {
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+
+.name {
+  color: #1977F6; }
 
 #learn-more {
   color: #fff;

@@ -6,7 +6,7 @@
 	<div class="col-md-8">
 		{{ $posts->appends(array('search' => Input::get('search')))->links() }}
 	@forelse ($posts as $key => $value)
-		<h3><a class="read-more" href="{{{ action('PostsController@show', $value->id) }}}">{{{ $value->title }}}</a></h3>
+		<h3><a id="index-title" class="read-more" href="{{{ action('PostsController@show', $value->id) }}}">{{{ $value->title }}}</a></h3>
 		<small>By: {{{$value->user->first_name}}} {{{$value->user->last_name}}} | 
 		Date Created: {{{ $value->created_at->setTimezone('America/Chicago')->format('F j, Y @ h:i A') }}}</small><br>
 		<p>{{{ Str::words($value->body, 20)}}}

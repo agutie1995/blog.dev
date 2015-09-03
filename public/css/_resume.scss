@@ -50,7 +50,7 @@
             left: -32px;
             top: -10px;
             border-radius: 50%;
-            background: $green;
+            background: $light-blue;
             display: inline-block;
             padding: 12px 7px;
             text-align: center;
@@ -126,7 +126,7 @@
 }
 
 .progress {
-    background-image: linear-gradient(to bottom, #D0D0D0, #F5F5F5 100%);
+    background-image: linear-gradient(to bottom, #DDD, #FFF 100%);
     background-repeat: repeat-x;
     height: 20px;
     margin-bottom: 20px;

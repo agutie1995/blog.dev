@@ -8,8 +8,16 @@
     text-align: center;
 }
 
-.preview-portfolio, .preview-portfolio:hover {
+.preview-portfolio {
     color: #000;
+}
+
+.preview-portfolio:hover {
+    color: $light-blue;
+}
+
+.item-portfolio-name {
+    color: $blue;
 }
 
 .gallery {
