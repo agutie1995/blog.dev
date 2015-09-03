@@ -23,6 +23,7 @@ Route::resource('/posts', 'PostsController');
 Route::get('/aboutme', 'HomeController@aboutme');
 
 Route::get('/resume', 'HomeController@showResume');
+Route::get('/download', 'HomeController@getDownload');
 
 Route::get('/portfolio', 'HomeController@portfolio');
 Route::get('/portfolio/simplesimon', 'HomeController@showSimpleSimon');

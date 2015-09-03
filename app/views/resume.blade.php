@@ -6,7 +6,7 @@
 	<div class="col-md-8">
 
 	<!-- ========= Start Time line section ===================================-->
-	    <h3 class="title with-icon"><span class="fa fa-book icn-title"></span> Education History</h3>
+	    <h3 class="resume-title title with-icon"><span class="fa fa-book icn-title"></span> Education History</h3>
     	<div class="box-block">
     		<div class="time-line">
           		<div class="item-event current">
@@ -14,14 +14,14 @@
             			<div class="event-content">
                   			<h4>Graphic Design</h4>
                   			<h5 class="location">San Antonio College</h5>
-                  			<h5>2014 - current</h5>
+                  			<h5>Jan 2014 - current</h5>
                   			{{-- <p>As a web designer and developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and building attractive websites.</p> --}}
             			</div>
           		</div>
-          		<div class="item-event">
-            			<span class="date">2015</span>
+          		<div class="item-event current">
+            			<span class="date">current</span>
             			<div class="event-content">
-                  			<h4>Full Stack Web Developer</h4>
+                  			<h4>Full Stack Web Development</h4>
                   			<h5 class="location">Codeup</h5>
                   			<h5>June 2015 - current</h5>
     {{--               			<p>As a web developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and attractive websites.</p> --}}
@@ -33,7 +33,7 @@
 
 	    <!-- ========= Start Time line section ===================================-->
 	    <div class="deviter"></div>
-	    <h3 class="title with-icon"><span class="fa fa-briefcase icn-title"></span> Work History</h3>
+	    <h3 class="resume-title title with-icon"><span class="fa fa-briefcase icn-title"></span> Work History</h3>
 	    <div class="box-block">
 	     	<div class="time-line">
 	        	<div class="item-event">
@@ -140,8 +140,7 @@
 {{--         <div class="deviter"></div>
         <h3 class="title with-icon"><span class="fa fa-file-text icn-title"></span> Download CV</h3>
         <div class="box-block">
-        	<p>You can download my CV in pdf format if you like. I love what i do.</p>
-          	<a href="#" class="btn btn-flat btn-block"><i class="fa fa-download"></i> Download</a>
+          	<a href="{{{ action('HomeController@getDownload') }}}" class="btn btn-flat btn-block"><i class="fa fa-download"></i> Download</a>
           	<div class="text-center">Or</div>
           	<a href="#" class="btn btn-flat btn-block style2"><i class="fa fa-print"></i> Print</a>
         </div> --}}

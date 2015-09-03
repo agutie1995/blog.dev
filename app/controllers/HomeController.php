@@ -53,6 +53,14 @@ class HomeController extends BaseController {
 	{
 		return View::make('resume');
 	}
+	public function getDownload(){
+        //PDF file is stored under project/public/download/info.pdf
+        $file= public_path(). "/download/info.pdf";
+        $headers = array(
+              'Content-Type: resume/docx',
+            );
+        return Response::download($file, 'alexandra_gutierrez_resume.pdf', $headers);
+	}
 
 	public function portfolio()
 	{

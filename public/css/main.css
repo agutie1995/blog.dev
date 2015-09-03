@@ -91,7 +91,8 @@
   background: #1977F6; }
 
 .time-line .item-event.current .event-content {
-  border: 3px solid #1977F6; }
+  border: 3px solid #1977F6;
+  margin-left: 3px; }
 
 .time-line .item-event .event-content {
   position: relative;
