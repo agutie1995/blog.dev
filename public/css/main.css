@@ -195,8 +195,11 @@
   width: 100%;
   height: auto; }
 
-#adlister_repo, #rem_github {
-  color: #000; }
+#rem_github, #adlister_repo {
+  color: #1977F6; }
+
+#adlister_repo:hover, #rem_github:hover {
+  color: #25CED1; }
 
 img.grayscale {
   filter: url(filters.svg#grayscale);

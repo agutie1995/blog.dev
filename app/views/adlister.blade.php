@@ -16,7 +16,7 @@
 	         	<a href="/img/adlister_screenshots/adlister_welcome.png" class="preview-portfolio imgWrapper image-popup">
 	            <img src="/img/adlister_screenshots/adlister_welcome_small.png" alt="adlister_welcome_img" class="grayscale img-responsive">
 	            <div class="desc-portfolio">
-	         		<h5>Welcome Page</h5>
+	         		<h5 class="item-portfolio-name">Welcome Page</h5>
 	         	</div>
 	        	</a>
 	        </div>
@@ -26,7 +26,7 @@
 	         	<a href="/img/adlister_screenshots/adlister_index.png" class="preview-portfolio imgWrapper image-popup">
 	            <img src="/img/adlister_screenshots/adlister_index_small.png" alt="adlister_img" class="grayscale img-responsive">
 	            <div class="desc-portfolio">
-	         		<h5>Index</h5>
+	         		<h5 class="item-portfolio-name">Index</h5>
 	         	</div>
 	        	</a>
 	        </div>
@@ -36,7 +36,7 @@
 	         	<a href="/img/adlister_screenshots/adlister_myaccount.png" class="preview-portfolio imgWrapper image-popup">
 	            <img src="/img/adlister_screenshots/adlister_myaccount_small.png" alt="adlister_img" class="grayscale img-responsive">
 	            <div class="desc-portfolio">
-	         		<h5>My Account</h5>
+	         		<h5 class="item-portfolio-name">My Account</h5>
 	         	</div>
 	        	</a>
 	        </div>
@@ -46,7 +46,7 @@
 	         	<a href="/img/adlister_screenshots/adlister_single_show.png" class="preview-portfolio imgWrapper image-popup">
 	            <img src="/img/adlister_screenshots/adlister_single_show_small.png" alt="adlister_img" class="grayscale img-responsive">
 	            <div class="desc-portfolio">
-	         		<h5>Single Ad View</h5>
+	         		<h5 class="item-portfolio-name">Single Ad View</h5>
 	         	</div>
 	        	</a>
 	        </div>
@@ -56,7 +56,7 @@
 	         	<a href="/img/adlister_screenshots/adlister_create.png" class="preview-portfolio imgWrapper image-popup">
 	            <img src="/img/adlister_screenshots/adlister_create_small.png" alt="adlister_img" class="grayscale img-responsive">
 	            <div class="desc-portfolio">
-	         		<h5>Create Ad Form</h5>
+	         		<h5 class="item-portfolio-name">Create Ad Form</h5>
 	         	</div>
 	        	</a>
 	        </div>
@@ -66,7 +66,7 @@
 	         	<a href="/img/adlister_screenshots/adlister_edit.png" class="preview-portfolio imgWrapper image-popup">
 	            <img src="/img/adlister_screenshots/adlister_edit_small.png" alt="adlister_img" class="grayscale img-responsive">
 	            <div class="desc-portfolio">
-	         		<h5>Edit Ad Form</h5>
+	         		<h5 class="item-portfolio-name">Edit Ad Form</h5>
 	         	</div>
 	        	</a>
 	        </div>
@@ -76,7 +76,7 @@
 	         	<a href="/img/adlister_screenshots/adlister_category.png" class="preview-portfolio imgWrapper image-popup">
 	            <img src="/img/adlister_screenshots/adlister_category_small.png" alt="adlister_img" class="grayscale img-responsive">
 	            <div class="desc-portfolio">
-	         		<h5>Category</h5>
+	         		<h5 class="item-portfolio-name">Category</h5>
 	         	</div>
 	        	</a>
 	        </div>
@@ -86,7 +86,7 @@
 	         	<a href="/img/adlister_screenshots/adlister_category2.png" class="preview-portfolio imgWrapper image-popup">
 	            <img src="/img/adlister_screenshots/adlister_category2_small.png" alt="adlister_img" class="grayscale img-responsive">
 	            <div class="desc-portfolio">
-	         		<h5>Category 2</h5>
+	         		<h5 class="item-portfolio-name">Category 2</h5>
 	         	</div>
 	        	</a>
 	        </div>

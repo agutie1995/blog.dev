@@ -25,8 +25,12 @@
     height: auto;
 }
 
-#adlister_repo, #rem_github {
-    color: #000;
+#rem_github, #adlister_repo {
+    color: $blue;
+}
+
+#adlister_repo:hover, #rem_github:hover {
+    color: $light-blue;
 }
 
 img.grayscale {
