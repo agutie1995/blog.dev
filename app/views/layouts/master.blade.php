@@ -39,22 +39,7 @@
 	            	{{-- <li><a href="{{{ action('HomeController@aboutme') }}}"><i class="fa fa-user"></i>About Me</a></li> --}}
 	                <li><a href="{{{ action('HomeController@showResume') }}}"><i class="fa fa-newspaper-o"></i>Resumé</a></li>
 	                <li><a href="{{{ action('HomeController@portfolio') }}}"><i class="fa fa-folder-open"></i>Portfolio</a></li>
-	                <li><a href="{{{ action('PostsController@index') }}}"><i class="fa fa-pencil"></i>Blog</a></li>
 	                <li><a href="{{{ action('HomeController@contact') }}}"><i class="fa fa-envelope"></i>Contact</a></li>
-{{-- 	            	@if (Auth::check())
-		                <li class="signin dropdown">
-		                	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello, {{{Auth::user()->first_name}}} <span class="caret"></span></a>
-			                <ul class="dropdown-menu">
-			                    <li><a href="{{{ action('PostsController@create') }}}">Create a Post</a></li>
-			                    <li><a href="#">My Posts</a></li>
-			                    <li><a href="#">My Account</a></li>
-			                    <li><a href="{{{ action('HomeController@doLogout') }}}">Logout</a></li>
-		                	</ul>
-	                	</li>
-	            	@else
-	            		<li class="signin"><a href="{{{ action('HomeController@login') }}}"><i class="fa fa-sign-in"></i>Sign In</a><li>
-	            		{{-- <li><a href="{{{ action('HomeController@signin') }}}">Sign Up</a></li> --}}
-	            	{{-- @endif --}}
 	            </ul>
             </div>
         </div>

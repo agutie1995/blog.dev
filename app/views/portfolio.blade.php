@@ -44,5 +44,25 @@
 	        	</a>
 	        </div>
 	    </li>
+	   	<li class="mix webdesign mix_all">
+	        <div class="item-portfolio" id="calculator-portfolio">
+	         	<a href="http://mentalhelpnetwork.com/" target="_blank" class="preview-portfolio imgWrapper image-popup">
+	            <img src="/img/mentalhelp.png" alt="Mental_Help" class="grayscale img-responsive" style="opacity: 1; filter: none;">
+	         	<div class="desc-portfolio">
+	         		<h5 class="item-portfolio-name">Mental Help</h5>
+	         	</div>
+	        	</a>
+	        </div>
+	    </li>
+	    <li class="mix webdesign mix_all">
+	        <div class="item-portfolio" id="calculator-portfolio">
+	         	<a href="{{{ action('PostsController@index') }}}" class="preview-portfolio imgWrapper image-popup">
+	            <img src="/img/blog.png" alt="Laravel_Blog" class="grayscale img-responsive" style="opacity: 1; filter: none;">
+	         	<div class="desc-portfolio">
+	         		<h5 class="item-portfolio-name">Laravel Blog</h5>
+	         	</div>
+	        	</a>
+	        </div>
+	    </li>
 	</ul>
 @stop
