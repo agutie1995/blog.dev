@@ -18,12 +18,12 @@
                   			{{-- <p>As a web designer and developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and building attractive websites.</p> --}}
             			</div>
           		</div>
-          		<div class="item-event current">
-            			<span class="date">current</span>
+          		<div class="item-event">
+            			<span class="date">2015</span>
             			<div class="event-content">
                   			<h4>Full Stack Web Development</h4>
                   			<h5 class="location">Codeup</h5>
-                  			<h5>June 2015 - current</h5>
+                  			<h5>June 2015 - Oct 2015</h5>
     {{--               			<p>As a web developer, my objective is to make a positive impact on clients using my skills and experience to design compelling and attractive websites.</p> --}}
             			</div>
           		</div>
