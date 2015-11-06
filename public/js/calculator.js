@@ -11,6 +11,7 @@ var sevenBtn = document.getElementById('numSeven');
 var eightBtn = document.getElementById('numEight');
 var	nineBtn = document.getElementById('numNine');
 var zeroBtn = document.getElementById('numZero');
+var decimalBtn = document.getElementById('decimal');
 var addBtn = document.getElementById('add');
 var subtractBtn = document.getElementById('subtract');
 var multiplyBtn = document.getElementById('multiply');
@@ -54,8 +55,7 @@ nineBtn.addEventListener('click', calcOperations);
 
 zeroBtn.addEventListener('click', calcOperations);
 
-
-
+decimalBtn.addEventListener('click', calcOperations);
 
 //calc functions in display
 
@@ -87,13 +87,13 @@ clearBtn.addEventListener('click', function(){
 
 equalBtn.addEventListener('click', function equals () {
 	if (middleDisplay.value == "+"){
-		leftDisplay.value = parseInt(leftDisplay.value) + parseInt(rightDisplay.value);
+		leftDisplay.value = parseFloat(leftDisplay.value) + parseFloat(rightDisplay.value);
 	} else if (middleDisplay.value == "-"){
-		leftDisplay.value = parseInt(leftDisplay.value) - parseInt(rightDisplay.value);
+		leftDisplay.value = parseFloat(leftDisplay.value) - parseFloat(rightDisplay.value);
 	} else if (middleDisplay.value == "*"){
-		leftDisplay.value = parseInt(leftDisplay.value) * parseInt(rightDisplay.value);
+		leftDisplay.value = parseFloat(leftDisplay.value) * parseFloat(rightDisplay.value);
 	} else if (middleDisplay.value == "/"){
-		leftDisplay.value = parseInt(leftDisplay.value) / parseInt(rightDisplay.value);
+		leftDisplay.value = parseFloat(leftDisplay.value) / parseFloat(rightDisplay.value);
 	}
 	middleTextBox.value = "";
 	rightDisplay.value = "";
