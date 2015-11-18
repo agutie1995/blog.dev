@@ -151,7 +151,10 @@
   <!-- ========= End Languages progress bars section ==========================-->
 
   <!-- ========= Start Skills section =========================================-->
+  <h3 class="title with-icon skills-header"><span class="fa fa-tasks icn-title"></span> Skills</h3>
+  <div>
 
+  </div>
 
   <!-- ========= End Skills section ===========================================-->
 
