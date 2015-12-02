@@ -1,64 +1,277 @@
-<head>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+<!DOCTYPE html>
+<html lang="en">
 
-    <link rel="stylesheet" href="/css/hello.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="Alexandra Gutierrez" content="">
+
+    <title>Alexandra Gutierrez</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-    <div class="container">
-        <div class="col-md-7">
-            <div id="cover-text">
-                <h1 class="name cover-font img-responsive">Alexandra Gutierrez</h1>
-                <h3 class="title cover-font img-responsive">Full-Stack Web Developer</h3>
-                <a id="learn-more" class="cover-font img-responsive" href="{{{ action('HomeController@showResume') }}}">ENTER</a>
-            </div> 
-            <div class="box-note">
-                <div id="slider-note" class="carousel slide" data-ride="carousel" data-interval="5000">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <p>"Sometimes the questions are complicated and the answers
-                            are simple."<br>
-                            - Dr. Seuss</p>
-                        </div>
-                        <div class="item">
-                            <p>"Everyone is a genius, but if you judge a fish by its
-                            ability to climb a tree, it will live its whole life
-                            believing that it is stupid."<br>
-                            - Albert Einstein</p>
-                        </div>
-                        <div class="item">
-                            <p>"We need never be hopeless because we can never be
-                            irreperably broken."<br>
-                            - John Green, <em>Looking for Alaska</em></p>
-                        </div>
-                        <div class="item">
-                            <p>"Life starts all over again when it gets crisp in
-                            the fall."<br>
-                            - F. Scott Fitzgerald, <em>The Great Gatsby</em></p>
-                        </div>
-                        <div class="item">
-                            <p>"The world breaks every one, and afterward, many are
-                            strong at the broken places."<br>
-                            - Ernest Hemingway, <em>A Farewell to Arms</em></p>
-                        </div>
-                    </div>
+
+<body id="page-top">
+    {{--------------------------- Start Nav -------------------------}}
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Alexandra Gutierrez</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    {{-- <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li> --}}
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    {{---------------------------- End Nav --------------------------}}
+
+    {{-------------------------- Start Header ------------------------}}
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Alexandra Gutierrez</h1>
+                <hr>
+                <p>Web Developer - Aspiring Graphic Designer - Amateur Photographer</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+    {{--------------------------- End Header -------------------------}}
+
+    {{------------------------ Start About Me -----------------------}}
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">About Me</h2>
+                    <hr class="light">
+                    <p class="text-faded">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
                 </div>
             </div>
         </div>
+    </section>
+    {{------------------------- End About Me ------------------------}}
 
-        <div class="col-md-5">
-            <div id="img-backstretch">
-                <img id="cover-photo" alt="Null" src="/img/seniorPic.jpg">
+    {{------------------------- Start Resume ------------------------}}
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Download My Resume</h2>
+                    <hr class="primary">
+                    <a href="#" class="btn btn-primary btn-xl">Get Started!</a>
+                </div>
             </div>
         </div>
-        <a id="photo-by" class="img-responsive" href="http://thestreetphotog.blogspot.com/" target="_blank">Photo By: Jesse Acosta</a>
+    </section>
+    {{-------------------------- End Resume -------------------------}}
 
-    </div>
-    <script src="/js/jquery.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com//jquery-2.1.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    {{----------------------- Start Portfolio -----------------------}}
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{------------------------ End Portfolio ------------------------}}
+
+    {{---------------------- Start Contact Me -----------------------}}
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>123-456-6789</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{----------------------- End Contact Me ------------------------}}
+
+    {{------------------------ Start Footer -------------------------}}
+    <aside class="bg-dark">
+        {{-- <footer> --}}
+        <div class="wrapper">
+            <a id="facebook-link" class="fa fa-facebook-square social" 
+                href="https://www.facebook.com/alexandra.gutierrez.79" target="_blank">
+            </a>
+            <a id="twitter-link" class="fa fa-twitter-square social"
+                href="https://www.twitter.com/later_alexgator" target="_blank">
+            </a>
+            <a id="google-plus-link" class="fa fa-google-plus-square social"
+                href="https://plus.google.com/115191459348083464621/" target="_blank">
+            </a>
+            <a id="linkedIn-link" class="fa fa-linkedin-square social"
+                href="https://www.linkedin.com/pub/alexandra-gutierrez/102/62a/54b" target="_blank">
+            </a>
+            <a id="github-link" class="fa fa-github-square social"
+                href="https://github.com/agutie1995/" target="_blank">
+            </a>
+            <a id="instagram-link" class="social fa fa-instagram"
+                href="https://www.instagram.com/later_alexgator" target="_blank">
+            </a>
+        </div>
+    {{-- </footer> --}}
+    </aside>
+    {{------------------------ End Footer -------------------------}}
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
 </body>
+
+</html>
