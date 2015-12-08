@@ -15,8 +15,8 @@
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    {{-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css"> --}}
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
     <!-- Custom CSS -->
@@ -120,14 +120,14 @@
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/whackamole.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Javascript
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Whack-A-Mole
                                 </div>
                             </div>
                         </div>
@@ -135,14 +135,14 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/calculator.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Javascript
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Calculator
                                 </div>
                             </div>
                         </div>
@@ -150,14 +150,14 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/simplesimon.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Javascript
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Simple Simon
                                 </div>
                             </div>
                         </div>
@@ -165,14 +165,14 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/adlister.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    PHP
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    WeGotIt
                                 </div>
                             </div>
                         </div>
@@ -180,14 +180,14 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/mentalhelp.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Laravel &amp; Sass
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Mental Help
                                 </div>
                             </div>
                         </div>
@@ -195,14 +195,14 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <img src="img/portfolio/blog.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    Laravel
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    Blog
                                 </div>
                             </div>
                         </div>
@@ -221,7 +221,7 @@
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
                     <form name="sentMessage" id="contactForm" novalidate="">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -255,7 +255,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                <button type="submit" class="btn btn-primary btn-lg">Send</button>
                             </div>
                         </div>
                     </form>

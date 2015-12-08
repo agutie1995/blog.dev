@@ -63,7 +63,7 @@
 	<hr class="style2">
 	<footer>
 		<div class="wrapper">
-		  <a id="facebook-link" class="entypo-facebook social" href="https://www.facebook.com/alexandra.gutierrez.79" target="_blank"></a>
+		  <a id="facebook-link" class="fa fa-facebook-square social" href="https://www.facebook.com/alexandra.gutierrez.79" target="_blank"></a>
 		  <a id="twitter-link" class="entypo-twitter social" href="https://www.twitter.com/later_alexgator" target="_blank"></a>
 		  <a id="google-plus-link" class="entypo-gplus social" href="https://plus.google.com/115191459348083464621/" target="_blank"></a>
 		  <a id="linkedIn-link" class="entypo-linkedin social" href="https://www.linkedin.com/pub/alexandra-gutierrez/102/62a/54b" target="_blank"></a>
